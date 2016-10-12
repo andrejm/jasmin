@@ -1,0 +1,84 @@
+/*
+
+Normal body copy
+Headings 1–6
+Small print
+A few other sizes for larger-than-normal headings etc.
+
+To maintain vertical rhythm we need two key ingredients; consistent line heights and consistent bottom margins
+*/
+
+// size of body text : 16px
+//line height of body text: 28px
+//original size: 16, original line height 1.7 which is 27.2
+
+/* Type scale
+- please, while setting type in other blocks/elements, use these mixins
+- this solution:
+    - helps to keep vertical rhythm
+    - is easier to maintain (ie. change sizes on breakpoints without having to check all the site)
+    - promotes consistency
+- but don't take it as a dogma - you are still free to break the rule if you need to
+========================================================================== */
+@mixin pr-alpha {
+    font-size: rem-calc(40);
+    line-height: (46/40);   // magic number / font size
+}
+
+@mixin pr-beta {
+    font-size: rem-calc(28);
+    line-height: 1.24;
+}
+
+@mixin pr-gamma {
+    font-size: rem-calc(20);
+    line-height: 28/20;
+}
+
+@mixin pr-base {
+    line-height: (28/16);
+}
+
+
+/* Typographic styles
+- based on predefined scale
+- styles are targeted via element selector and class. You don't need to explicitly specify class and styles are applied. You also have an option to use semantic headings and change their look easily with a class. Structure and looks are independant.
+- in some cases you will need some deviation from this default settings. In such cases make your own class and override styles or you utility class (if you only need to remove margin from one instance etc.).
+========================================================================== */
+
+h1, .pr-alpha {
+    @include pr-alpha;
+    padding: 0;
+    font-weight: bold;
+    color: #000;
+    margin-top: rem-calc(60);
+    margin-bottom: rem-calc(40);
+}
+
+h2, .pr-beta {
+    @include pr-beta;
+    padding: 0;
+    font-weight: bold;
+    color: #000;
+    margin-top: rem-calc(60);
+    margin-bottom: rem-calc(30);
+    + h3, .pr-gamma {
+        margin-top: -10px;
+    }
+}
+
+h3, .pr-gamma {
+    @include pr-gamma;
+    margin-top: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-top: rem-calc(40);
+    margin-bottom: rem-calc(20);
+}
+
+strong,
+b {
+    font-weight: bold;
+}
+
+

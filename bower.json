@@ -1,0 +1,10 @@
+{
+  "name": "pechakucha",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "normalize.css": "~3.0",
+    "foundation-sites": "~6.2",
+    "svg4everybody": "^2.1.0"
+  }
+}
