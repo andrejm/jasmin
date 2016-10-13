@@ -1,9 +1,15 @@
 {% extends "_layout.common.twig" %}
 
-{% block title %}Page title{% endblock %}
-
 {% block page %}
 
-<h1>Hello world. This is me.</h1>
+<section class="showcase">
+	<div class="showcase__logo">
+		<svg class="logo logo--center">
+		    <use xlink:href="/dist/svg/svg.svg#logo-center" />
+		</svg>
+	</div>
+</section>
+
+
 
 {% endblock %}

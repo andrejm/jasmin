@@ -1,0 +1,14 @@
+.logo {
+	fill: $primary-color;
+	max-width: rem-calc(112);
+	max-height: rem-calc(120);
+
+	&--center {
+		max-width: rem-calc(200);
+		max-height: initial;
+		transform: rotate(-45deg);
+		position: relative;
+		left: -5px;
+		top: -5px;
+	}
+}

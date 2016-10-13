@@ -1,0 +1,28 @@
+.showcase {
+	background: $white url('../../images/bg-photo.jpg') no-repeat center;
+	background-size: cover;
+
+	@include breakpoint( medium ) {
+		min-height: rem-calc(520);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__logo {
+		display: none;
+
+		@include breakpoint( medium ) {
+			display: block;
+			width: rem-calc(255);
+			height: rem-calc(255);
+			background-color: $white;
+			transform: rotate(45deg);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+	}
+}

@@ -1,0 +1,12 @@
+.header {
+	@include flex-grid-row();
+	@include flex-grid-column(12);
+	
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+
+	&__logo {
+		height: rem-calc(120);
+	}
+}

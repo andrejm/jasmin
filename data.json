@@ -1,0 +1,72 @@
+{
+	"title" : "JASMIN restaurant",
+	
+	"menu" : {
+		"about" : {
+			"title" : "O reštaurácii",
+			"link" : "about"
+		},
+		"menu" : {
+			"title" : "Menu",
+			"link" : "#menu"
+		},
+		"contact" : {
+			"title" : "Kontakt",
+			"link" : "#contact"
+		}
+	},
+
+	"langswitch" : {
+		"left" : {
+			"title" : "English",
+			"link" : "english.html"
+		},
+		"right" : {
+			"title" : "Chinese",
+			"link" : "chinese.html"
+		}
+	},
+
+	"aboutpage" : {
+		"title" : "O reštaurácii",
+		"desc" : [
+			"Milí priatelia, stretávame sa na tomto mieste už od roku 1996.",
+			"Vďaka vám, milí naši klienti, má náš príbeh vo vašej krajine pokračovanie. V krajine, ktorá nás prijala a poskytla nám príležitosť robiť to, čo máme radi. V krajine, v ktorej sme našli zázemie pre nás a pre naše deti. V krajine, ktorú dnes vďaka vám môžeme nazývať domovom. Sídlime pod hradom v historickom centre Bratislavy oproti Dómu svätého Martina. Máme 80 miest na vnútorné sedenie a v letných mesiacoch 18 miest na terase.",
+			"Naši hostia môžu parkovať zadarmo na 6 parkovacích miestach priamo pred reštauráciou. V našej reštaurácii pre vás usporiadame rôzne súkromné aj firemné akcie. Máme špičkových čínskych kuchárov, ktorí pracovali v Číne v päťhviezdičkových hoteloch. Obsluhujúci personál hovorí slovensky, anglicky a čínsky. U nás môžte ochutnať typické špeciality ázijskej kuchyne. Srdečne Vás všetkých privítame v našej reštaurácii."
+		],
+		"slides" : [
+			"images/slide_01.jpg",
+			"images/slide_02.jpg",
+			"images/slide_03.jpg"
+		]
+	},
+
+	"kontaktpage" : {
+		"title" : "Kontakt",
+		"sections" : {
+			"address" : {
+				"title" : "Adresa",
+				"lines" : [
+					"Čínska reštaurácia Jasmín 1, Židovská 7",
+					"811 01 Bratislava, Slovenská republika"
+				]
+			},
+			"contact" : {
+				"title" : "Kontakt",
+				"lines" : [
+					"Tel.: + 421 2 54 41 51 82",
+					"Fax:  + 421 2 54 41 51 82",
+					"E-mail: jasmin.1@hotmail.com"
+				]
+			},
+			"opening_hours" : {
+				"title" : "Otváracie hodiny",
+				"lines" : [
+					"Otvorené denne od 11:00 do 23:00"
+				]
+			}
+		}
+	},
+
+	"bonapetit" : "Prajeme Vám dobrú chuť!"
+}

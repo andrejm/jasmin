@@ -97,8 +97,12 @@ gulp.task('sass', function() {
 // Compile Twig templates
 gulp.task('twig', function () {
     'use strict';
+    var data = require('./data.json');
+
     return gulp.src(paths.twigTemplates)
-        .pipe(twig())
+        .pipe(twig({
+            data: data
+        }))
         .pipe(gulp.dest('.'))
         .pipe(browserSync.stream());
 });
