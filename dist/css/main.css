@@ -1385,13 +1385,14 @@ h6 {
 
 a {
   color: #a82d53;
-  text-decoration: none;
+  text-decoration: underline;
   line-height: inherit;
   cursor: pointer;
 }
 
 a:hover, a:focus {
   color: #902747;
+  text-decoration: none;
 }
 
 a img {
@@ -4694,6 +4695,55 @@ table.hover tr:nth-of-type(even):hover {
     - E.g. margin on a button or a text
     - have prefix pr-u-
    ========================================================================== */
+.baseinfo {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.baseinfo__lang {
+  -ms-flex: 0 0 16.66667%;
+      flex: 0 0 16.66667%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  max-width: 16.66667%;
+}
+
+@media screen and (min-width: 40em) {
+  .baseinfo__lang {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+.baseinfo__address {
+  -ms-flex: 0 0 66.66667%;
+      flex: 0 0 66.66667%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  max-width: 66.66667%;
+  text-align: center;
+  color: #343434;
+  font-size: 1.125rem;
+}
+
+@media screen and (min-width: 40em) {
+  .baseinfo__address {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+.baseinfo__address a {
+  color: inherit;
+}
+
 .header {
   max-width: 75rem;
   margin-left: auto;
@@ -4723,6 +4773,50 @@ table.hover tr:nth-of-type(even):hover {
 
 .header__logo {
   height: 7.5rem;
+}
+
+.langhref {
+  display: inline-block;
+  line-height: 1.625rem;
+  height: 1.625rem;
+  text-decoration: none;
+  position: relative;
+  vertical-align: middle;
+  padding: 0.3125rem 0.625rem;
+  box-sizing: content-box;
+}
+
+.langhref:before, .langhref:after {
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.5s ease;
+  margin-top: 4px;
+}
+
+.langhref:before {
+  content: url("../../images/arrow-left.svg");
+  margin-right: 0.625rem;
+}
+
+.langhref--right:before {
+  content: '';
+}
+
+.langhref--right:after {
+  content: url("../../images/arrow-right.svg");
+  margin-left: 0.625rem;
+}
+
+.langhref:hover::before, .langhref:hover::after {
+  transition: all 0.5s ease;
+}
+
+.langhref:hover::before {
+  transform: translateX(-0.4375rem);
+}
+
+.langhref:hover::after {
+  transform: translateX(0.4375rem);
 }
 
 .logo {

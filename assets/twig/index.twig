@@ -10,6 +10,22 @@
 	</div>
 </section>
 
+<section class="baseinfo">
+	<div class="baseinfo__lang baseinfo__lang--left">
+		<a href="{{ langswitch.left.link }}" class="langhref">{{ langswitch.left.title }}</a>
+	</div>
+	<div class="baseinfo__address">
+		<p>
+			{{ address.name }}, {{ address.open }} <br>
+			{{ address.contact }}, <a href="{{ address.map }}">{{ address.address }}</a>
+		</p>
+	</div>
+	<div class="baseinfo__lang baseinfo__lang--right">
+		<a href="{{ langswitch.right.link }}" class="langhref langhref--right">{{ langswitch.right.title }}</a>
+	</div>
+
+</section>
+
 
 
 {% endblock %}

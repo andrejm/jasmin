@@ -1,0 +1,52 @@
+$langhref-gutter: rem-calc(10);
+$arrow-movement: rem-calc(7);
+
+.langhref {
+	display: inline-block;
+	line-height: rem-calc(26);
+	height: rem-calc(26);
+	text-decoration: none;
+	position: relative;
+	vertical-align: middle;
+	padding: rem-calc(5 10);
+	box-sizing: content-box;
+
+	&:before,
+	&:after {
+		display: inline-block;
+		vertical-align: middle;
+		transition: all 0.5s ease;
+		margin-top: 4px;
+	}
+
+	&:before {
+		content: url('../../images/arrow-left.svg');
+		margin-right: $langhref-gutter;
+	}
+
+	&--right {
+		&:before {
+			content: '';
+		}
+
+		&:after {
+			content: url('../../images/arrow-right.svg');
+			margin-left: $langhref-gutter;
+		}
+	}
+
+	&:hover {
+		&::before,
+		&::after {
+			transition: all 0.5s ease;
+		}
+		
+		&::before {
+			transform: translateX(-$arrow-movement);
+		}
+
+		&::after {
+			transform: translateX($arrow-movement);
+		}
+	}
+}

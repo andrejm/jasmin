@@ -1,0 +1,21 @@
+.baseinfo {
+	@include flex-grid-row();
+
+	padding-top: rem-calc(40);
+	padding-bottom: rem-calc(40);
+
+	&__lang {
+		@include flex-grid-column(2);
+	}
+
+	&__address {
+		@include flex-grid-column(8);
+		text-align: center;
+		color: $jasmin-gray;
+		font-size: rem-calc(18);
+
+		a {
+			color: inherit;
+		}
+	}
+}
