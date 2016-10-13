@@ -26,6 +26,27 @@
 
 </section>
 
+<footer class="footer">
+	<div class="footer__inner">
+		<div class="footer__address">
+			<h3 class="footer__sectiontitle">{{ kontaktpage.title }}</h3>
+			{% for kontaktsection in kontaktpage.sections %}
+				<h4 class="footer__sectionsubtitle">{{ kontaktsection.title }}</h4>
+				<p>
+					{% for kontaktline in kontaktsection.lines %}
+						{{ kontaktline }} <br>
+					{% endfor %}
+				</p>
+			{% endfor %}
+		</div>
+	</div>
+</footer>
+
+<section class="goodbeye">
+	<p class="goodbeye__bonapetit">{{ bonapetit }}</p>
+	<p>Jasmin restaurant</p>
+</section>
+
 
 
 {% endblock %}

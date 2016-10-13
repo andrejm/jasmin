@@ -1,0 +1,29 @@
+.footer {
+	background-color: $jasmin-salmon;
+
+	&__inner {
+		@include flex-grid-row();
+	}
+
+	&__address {
+		padding-top: rem-calc(80);
+		padding-bottom: rem-calc(200);
+		background: transparent url('../../images/kriziky.svg') no-repeat center bottom;
+		background-size: contain;
+
+		@include breakpoint( medium ) {
+			@include flex-grid-column(6);
+		}
+	}
+
+	&__sectiontitle {
+		font-size: rem-calc(40);
+		margin-bottom: rem-calc(50);
+	}
+
+	&__sectionsubtitle {
+		font-size: rem-calc(18);
+		margin-bottom: 0;
+	}
+
+}
