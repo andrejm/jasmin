@@ -418,7 +418,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Idealista, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -1318,7 +1318,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Idealista, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -4685,6 +4685,81 @@ table.hover tr:nth-of-type(even):hover {
     -ms-flex-order: 6;
         order: 6;
   }
+}
+
+@font-face {
+  font-family: 'Idealista';
+  src: url("../fonts/idealista_semibold-webfont.woff2") format("woff2"), url("../fonts/idealista_semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Idealista';
+  src: url("../fonts/idealista_medium-webfont.woff2") format("woff2"), url("../fonts/idealista_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+
+Normal body copy
+Headings 1–6
+Small print
+A few other sizes for larger-than-normal headings etc.
+
+To maintain vertical rhythm we need two key ingredients; consistent line heights and consistent bottom margins
+*/
+/* Type scale
+- please, while setting type in other blocks/elements, use these mixins
+- this solution:
+    - helps to keep vertical rhythm
+    - is easier to maintain (ie. change sizes on breakpoints without having to check all the site)
+    - promotes consistency
+- but don't take it as a dogma - you are still free to break the rule if you need to
+========================================================================== */
+/* Typographic styles
+- based on predefined scale
+- styles are targeted via element selector and class. You don't need to explicitly specify class and styles are applied. You also have an option to use semantic headings and change their look easily with a class. Structure and looks are independant.
+- in some cases you will need some deviation from this default settings. In such cases make your own class and override styles or you utility class (if you only need to remove margin from one instance etc.).
+========================================================================== */
+h1, .pr-alpha {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  padding: 0;
+  font-weight: bold;
+  color: #000;
+  margin-top: 3.75rem;
+  margin-bottom: 2.5rem;
+}
+
+h2, .pr-beta {
+  font-size: 1.75rem;
+  line-height: 1.24;
+  padding: 0;
+  font-weight: bold;
+  color: #000;
+  margin-top: 3.75rem;
+  margin-bottom: 1.875rem;
+}
+
+h2 + h3, h2 .pr-gamma, .pr-beta + h3, .pr-beta .pr-gamma {
+  margin-top: -10px;
+}
+
+h3, .pr-gamma {
+  font-size: 1.25rem;
+  line-height: 28/20;
+  margin-top: 0;
+  padding: 0;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+strong,
+b {
+  font-weight: bold;
 }
 
 /* ==========================================================================
