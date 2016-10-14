@@ -5,12 +5,12 @@
 <section class="showcase">
 	<div class="showcase__logo">
 		<svg class="logo logo--center">
-		    <use xlink:href="/dist/svg/svg.svg#logo-center" />
+		    <use xlink:href="dist/svg/svg.svg#logo-center" />
 		</svg>
 	</div>
 </section>
 
-<section class="baseinfo">
+<section id="{{ menu.about.id }}" class="js-section baseinfo">
 	<div class="baseinfo__lang baseinfo__lang--left">
 		<a href="{{ langswitch.left.link }}" class="langhref">{{ langswitch.left.title }}</a>
 	</div>
@@ -26,7 +26,11 @@
 
 </section>
 
-<footer class="footer">
+<section id="{{ menu.menu.id }}" class="js-section js-section-trigger-menu foodmenu">
+	&nbsp;
+</section>
+
+<footer id="{{ menu.contact.id }}" class="js-section footer">
 	<div class="footer__inner">
 		<div class="footer__address">
 			<h3 class="footer__sectiontitle">{{ kontaktpage.title }}</h3>

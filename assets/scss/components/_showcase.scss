@@ -8,6 +8,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		
+		.page-scrolled & {
+			margin-top: $header-height;
+		}
 	}
 
 	&__logo {

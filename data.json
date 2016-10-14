@@ -4,15 +4,15 @@
 	"menu" : {
 		"about" : {
 			"title" : "O reštaurácii",
-			"link" : "about"
+			"id" : "about"
 		},
 		"menu" : {
 			"title" : "Menu",
-			"link" : "#menu"
+			"id" : "menu"
 		},
 		"contact" : {
 			"title" : "Kontakt",
-			"link" : "#contact"
+			"id" : "contact"
 		}
 	},
 
