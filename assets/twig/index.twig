@@ -10,32 +10,71 @@
 	</div>
 </section>
 
-<section id="{{ menu.about.id }}" class="js-section baseinfo">
-	<div class="baseinfo__lang baseinfo__lang--left">
-		<a href="{{ langswitch.left.link }}" class="langhref">{{ langswitch.left.title }}</a>
-	</div>
-	<div class="baseinfo__address">
-		<p>
-			{{ address.name }}, {{ address.open }} <br>
-			{{ address.contact }}, <a href="{{ address.map }}">{{ address.address }}</a>
-		</p>
-	</div>
-	<div class="baseinfo__lang baseinfo__lang--right">
-		<a href="{{ langswitch.right.link }}" class="langhref langhref--right">{{ langswitch.right.title }}</a>
-	</div>
+<section id="{{ menu.about.id }}" class="js-section">
+	<section class="baseinfo">
+		<div class="baseinfo__lang baseinfo__lang--left">
+			<a href="{{ langswitch.left.link }}" class="langhref">{{ langswitch.left.title }}</a>
+		</div>
+		<div class="baseinfo__address">
+			<p>
+				{{ address.name }}, {{ address.open }} <br>
+				{{ address.contact }}, <a href="{{ address.map }}">{{ address.address }}</a>
+			</p>
+		</div>
+		<div class="baseinfo__lang baseinfo__lang--right">
+			<a href="{{ langswitch.right.link }}" class="langhref langhref--right">{{ langswitch.right.title }}</a>
+		</div>
 
+	</section>
+
+	<section class="moreinfo">
+		<div class="moreinfo__inner">
+			<div class="moreinfo__text">
+				<h2>{{ aboutpage.title }}</h2>
+				{% for aboutline in aboutpage.desc %}
+					<p>{{ aboutline }}</p>
+				{% endfor %}
+			</div>
+			<div class="moreinfo__photo">
+				<div class="photogallery js-photogallery">
+					<div>
+						<img src="images/photo-team.jpg" alt="Team of Jasmin restaurant">
+					</div>
+					<div>
+						<img src="images/dummy.jpg" alt="Team of Jasmin restaurant">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </section>
 
 <section id="{{ menu.menu.id }}" class="js-section js-section-trigger-menu foodmenu">
-	&nbsp;
+	<div class="row">
+		<div class="small-12 columns">
+			<h2>Tu bude menu</h2>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>
+	</div>
 </section>
 
 <footer id="{{ menu.contact.id }}" class="js-section footer">
 	<div class="footer__inner">
 		<div class="footer__address">
-			<h3 class="footer__sectiontitle">{{ kontaktpage.title }}</h3>
+			<h2 class="footer__sectiontitle">{{ kontaktpage.title }}</h3>
 			{% for kontaktsection in kontaktpage.sections %}
-				<h4 class="footer__sectionsubtitle">{{ kontaktsection.title }}</h4>
+				<h3 class="footer__sectionsubtitle">{{ kontaktsection.title }}</h4>
 				<p>
 					{% for kontaktline in kontaktsection.lines %}
 						{{ kontaktline }} <br>

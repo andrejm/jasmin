@@ -38,6 +38,7 @@ var paths = {
         // 'bower_components/foundation-sites/js/foundation.responsiveToggle.js',
         // 'bower_components/foundation-sites/js/foundation.orbit.js',
         'assets/js/jquery-scrollspy.js', //https://github.com/softwarespot/jquery-scrollspy
+        'bower_components/slick-carousel/slick/slick.min.js',
         'assets/js/components/*.js',
         'assets/js/main.js'
         ],

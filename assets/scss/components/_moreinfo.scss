@@ -1,0 +1,20 @@
+.moreinfo {
+	background-color: $jasmin-salmon;
+
+	&__inner {
+		@include flex-grid-row();
+	}
+
+	&__text,
+	&__photo {
+		@include flex-grid-column(12);
+
+		@include breakpoint( medium ) {
+			@include flex-grid-column(6);
+		}
+	}
+
+	&__text {
+		padding-bottom: rem-calc( 35 );
+	}
+}

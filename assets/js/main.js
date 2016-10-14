@@ -8,5 +8,4 @@ jQuery(document).ready(function($) {
 	//     polyfill: true // polyfill <use> elements for External Content
 	// });
 
-
 });

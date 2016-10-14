@@ -63,7 +63,8 @@ $white: #fefefe;
 
 $jasmin-gray: #343434;
 $jasmin-salmon: #ecdccc;
-$header-height: rem-calc(120);
+$header-height: rem-calc( 120 ); //careful, we use this also in javascript files for scrolling and scrollspy purposes
+$scrolled-header-height: rem-calc( 80 );
 
 $body-background: $white;
 $body-font-color: $black;

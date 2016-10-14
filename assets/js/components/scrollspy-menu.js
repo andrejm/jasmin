@@ -1,7 +1,8 @@
 jQuery(document).ready(function($) {
 
 	var $body = $('body'),
-		$navigation = $( '.js-main-menu' );
+		$navigation = $( '.js-main-menu' ),
+		topbarHeight = 80;
 
 	$('.js-section').each(function eachElement() {
 		// cache the jQuery object
@@ -15,8 +16,8 @@ jQuery(document).ready(function($) {
 		window.console.log('min: ' + position.top + ' / max: ' + window.parseInt(position.top + $this.height(), 10));
 
 		$this.scrollspy({
-			min: position.top,
-			max: position.top + $this.height(),
+			min: position.top - topbarHeight,
+			max: position.top + $this.height() - 1 - topbarHeight,
 			onEnter: function onEnter(element/*, position*/) {
 				$currentMenuItem = $navigation.find('[data-section="' + element.id + '"]');
 

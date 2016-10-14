@@ -5,6 +5,7 @@
   "devDependencies": {
     "normalize.css": "~3.0",
     "foundation-sites": "~6.2",
-    "svg4everybody": "^2.1.0"
+    "svg4everybody": "^2.1.0",
+    "slick-carousel": "slick.js#^1.6.0"
   }
 }
