@@ -12,8 +12,8 @@ jQuery(document).ready(function($) {
 
 		var $currentMenuItem = '';
 
-		window.console.log(position);
-		window.console.log('min: ' + position.top + ' / max: ' + window.parseInt(position.top + $this.height(), 10));
+		// window.console.log(position);
+		// window.console.log('min: ' + position.top + ' / max: ' + window.parseInt(position.top + $this.height(), 10));
 
 		$this.scrollspy({
 			min: position.top - topbarHeight,
@@ -23,14 +23,14 @@ jQuery(document).ready(function($) {
 
 
 				// console.log('[data-section="' + element.id + '"]');
-				console.log('Entering ' + element.id);
-				console.log($currentMenuItem);
+				// console.log('Entering ' + element.id);
+				// console.log($currentMenuItem);
 
 				$currentMenuItem.addClass('main-menu__item--active');
 
 			},
 			onLeave: function onLeave(element/*, position*/) {
-				window.console.log('Leaving ' + element.id);
+				// window.console.log('Leaving ' + element.id);
 				$currentMenuItem = $navigation.find('[data-section="' + element.id + '"]');
 				$currentMenuItem.removeClass('main-menu__item--active');
 			}
@@ -39,17 +39,17 @@ jQuery(document).ready(function($) {
 
 
 	$menuTrigger = $('.js-section-trigger-menu');
-	console.log(' offsest ' + $menuTrigger.offset().top);
+	// console.log(' offsest ' + $menuTrigger.offset().top);
 	$menuTrigger.scrollspy({
 		// min: $menuTrigger.offset().top,
 		min: $navigation.height(),
 		max: $(document).height(),
 		onEnter: function(element, position) {
-			console.log('Scrollspy: Entering the menu trigger section');
+			// console.log('Scrollspy: Entering the menu trigger section');
 			$body.addClass('page-scrolled');
 		},
 		onLeave: function(element, position) {
-			console.log('Scrollspy: Leaving the menu trigger section');
+			// console.log('Scrollspy: Leaving the menu trigger section');
 			$body.removeClass('page-scrolled');
 		}
 	});

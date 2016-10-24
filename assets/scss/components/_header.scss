@@ -5,24 +5,33 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
+	height: $scrolled-header-height;
+
+	@include breakpoint( medium ) {
+		height: $header-height;
+	}
 
 	.page-scrolled & {
-		@include breakpoint( medium ) {
-			position: fixed;
-			top: 0;
-			width: 100%;
-			background: $white;
-			height: $scrolled-header-height;
-			z-index: 1;
-		}
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background: $white;
+		height: $scrolled-header-height;
+		z-index: 1;
 	}
 
 
 	&__logo {
-		height: $header-height;
+		display: none;
 
-		.page-scrolled & {
-			height: auto;
+		@include breakpoint( medium ) {
+			display: block;
+			height: $header-height;
+			
+			.page-scrolled & {
+				height: auto;
+			}
 		}
+
 	}
 }

@@ -1,0 +1,15 @@
+.menu-pages {
+	&__title {
+		font-size: rem-calc( 18 );
+		color: $white;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: rem-calc( 25 );
+		margin-top: rem-calc( 10 );
+
+		@include breakpoint( medium ) {
+			color: $primary-color;
+			margin-bottom: rem-calc( 50 );
+		}
+	}
+}

@@ -31,3 +31,17 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
+
+@mixin underline {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+@mixin underline-hover( $underline-color ) {
+	width: 100%;
+	background: $underline-color;
+}

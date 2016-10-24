@@ -9,7 +9,7 @@
 	&__photo {
 		@include flex-grid-column(12);
 
-		@include breakpoint( medium ) {
+		@include breakpoint( large ) {
 			@include flex-grid-column(6);
 		}
 	}

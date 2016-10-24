@@ -6,12 +6,13 @@
 	}
 
 	&__address {
+		@include flex-grid-column(12);
 		padding-top: rem-calc(80);
 		padding-bottom: rem-calc(200);
 		background: transparent url('../../images/kriziky.svg') no-repeat center bottom;
 		background-size: contain;
 
-		@include breakpoint( medium ) {
+		@include breakpoint( large ) {
 			@include flex-grid-column(6);
 		}
 	}

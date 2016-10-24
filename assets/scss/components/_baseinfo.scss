@@ -6,6 +6,12 @@
 
 	&__lang {
 		@include flex-grid-column(2);
+
+		&--right {
+			@include breakpoint( medium ) {
+				order: 3;
+			}
+		}
 	}
 
 	&__address {

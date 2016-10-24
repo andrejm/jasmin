@@ -1,0 +1,23 @@
+.menu-paging {
+	&__item {
+		cursor: pointer;
+
+		@include breakpoint( medium ) {
+			max-width: 60px;
+		}
+	}
+
+	&__label {
+		@include breakpoint( medium ) {
+			display: none;
+		}
+	}
+
+	&__icon {
+		display: none !important;
+
+		@include breakpoint( medium ) {
+			display: block !important;
+		}
+	}
+}

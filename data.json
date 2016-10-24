@@ -76,5 +76,437 @@
 		}
 	},
 
-	"bonapetit" : "Prajeme Vám dobrú chuť!"
+	"bonapetit" : "Prajeme Vám dobrú chuť!",
+
+	"foodmenu" : {
+		"section_main_menu" : {
+			"title" : "Jedálny lístok",
+			"anchor" : "jedalny-listok",
+			"parts" : {
+				"part_soup" : {
+					"title" : "Polievky",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "101", "name" : "Ostrokyslá polievka, 0.25 l", "price" : "2.30" },
+						{ "no" : "102", "name" : "Kuracia polievka s bambusovými výhonkami a hubami, 0.25l", "price" : "2.50" },
+						{ "no" : "103", "name" : "Wan-tan polievka s morskými riasami a plnenými taštičkami, 0.25 l", "price" : "2.80" },
+						{ "no" : "104", "name" : "Polievka so zeleninou, 0.25 l", "price" : "2.00" },
+						{ "no" : "105", "name" : "Hustá polievka s tromi druhmi kreviet, 0.25 l", "price" : "3.30" },
+						{ "no" : "106", "name" : "Krevetová polievka na thajský spôsob, 0.25 l", "price" : "3.80" },
+						{ "no" : "107", "name" : "Polievka dňa, 0.25 l", "price" : "3.00" }
+					]
+				},
+				"part_dimsum" : {
+					"title" : "Dim Sum",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "111", "name" : "Ravioli “Ha-Kao”z morských kreviet, 4 ks", "price" : "4.50" },
+						{ "no" : "112", "name" : "“Ha-SiuMai”knedlíky z morských kreviet, 4 ks", "price" : "4.50" },
+						{ "no" : "113", "name" : "Ryžové taštičky z morských kreviet, 3 ks", "price" : "4.50" },
+						{ "no" : "114", "name" : "Dusené taštičky s bravčovým mäsom, 6 ks", "price" : "3.50" },
+						{ "no" : "115", "name" : "Varené taštičky “Jiao-zi”, 6 ks", "price" : "2.40" },
+						{ "no" : "116", "name" : "Guotie zapekané taštičky plnené bravčovým mäsom", "price" : "4.80" },
+						{ "no" : "117", "name" : "Vyprážané taštičky z morských kreviet, 3 ks", "price" : "4.50" }
+					]
+				},
+				"part_starters" : {
+					"title" : "Predjedlá",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "211", "name" : "Lupienky z homára, 80 g", "price" : "2.00" },
+						{ "no" : "212", "name" : "Čierne vajíčko so sójovou omáčkou, 1 ks", "price" : "2.00" },
+						{ "no" : "213", "name" : "Kuracie mäso saté s arašidovou omáčkou, 150 g", "price" : "3.00" },
+						{ "no" : "214", "name" : "Chrumkavé vietnamské jarné rolky, 2 ks", "price" : "2.80" },
+						{ "no" : "215", "name" : "Pikantné jahňacie na ihle, 2 ks", "price" : "3.60" },
+						{ "no" : "216", "name" : "Tofu s Čierným vajíčkom, 350 g", "price" : "5.90" },
+						{ "no" : "217", "name" : "Sičuánske kurča na studeno, 300 g", "price" : "5.90" },
+						{ "no" : "218", "name" : "Hovädzie mäso s chilli omáčkou, 300 g", "price" : "7.90" }
+					]
+				},
+				"part_salads" : {
+					"title" : "Šaláty",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "231", "name" : "Miešaný šalát, 180 g", "price" : "2.60" },
+						{ "no" : "232", "name" : "Kapustový pikantný šalát, 180 g", "price" : "2.60" },
+						{ "no" : "233", "name" : "Uhorkový šalát s cesnakom, 180 g", "price" : "2.90" },
+						{ "no" : "234", "name" : "Rukolový šalát, 180 g", "price" : "3.50" },
+						{ "no" : "235", "name" : "Kalerábový šalát, 180 g", "price" : "3.50" },
+						{ "no" : "236", "name" : "“Kimchi” kórejský šalát ostrý, 180 g", "price" : "3.90" }
+					]
+				},
+				"part_poultry" : {
+					"title" : "Hydina",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "301", "name" : "Kuracie sladkokyslé, 250 g", "price" : "5.90" },
+						{ "no" : "302", "name" : "Kuracie chop-suey, 250 g", "price" : "6.90" },
+						{ "no" : "303", "name" : "Kuracie Gong–bao, 250 g", "price" : "6.90" },
+						{ "no" : "304", "name" : "Kuracie krídla s chilli, 250 g", "price" : "7.90" },
+						{ "no" : "305", "name" : "Pikantné kuracie mäso, 250 g", "price" : "8.90" },
+						{ "no" : "306", "name" : "Kuracie po Sičuánsky, 250 g", "price" : "8.90" },
+						{ "no" : "307", "name" : "Kuracie mäso s hoisin omáčkou na horúcej platni, 300 g", "price" : "8.90" },
+						{ "no" : "308", "name" : "Sladkokyslá kačica, 300 g", "price" : "7.90" },
+						{ "no" : "309", "name" : "Chrumkavá kačica, 200 g", "price" : "8.50" },
+						{ "no" : "310", "name" : "Kačica po pekingsky s plackami, 200 g", "price" : "9.90" },
+						{ "no" : "309a", "name" : "Placky, 6 ks", "price" : "1.50" },
+						{ "no" : "309b", "name" : "Sladká sójová omáčka, 20 g", "price" : "1.00" }
+					]
+				},
+				"part_pork" : {
+					"title" : "Bravčové mäso",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "401", "name" : "Bravčové po sečuánsky (ostré), 250g", "price" : "6.90" },
+						{ "no" : "402", "name" : "Bravčový bôčik s fazuľovou omáčkou, 300 g", "price" : "8.90" },
+						{ "no" : "403", "name" : "Bravčové rebierka na čínsky spôsob, 250 g", "price" : "8.90" },
+						{ "no" : "404", "name" : "Bravčové mäso na spôsob „Tangcurou“, 250 g", "price" : "8.90" },
+						{ "no" : "405", "name" : "Bravčový bôčik na sladkej omáčke, 250 g", "price" : "8.90" },
+						{ "no" : "406", "name" : "Pekingské bravčové s plackami, 250 g", "price" : "9.90" },
+						{ "no" : "407", "name" : "Bravčové s cesnakovými výhonkami, 250 g", "price" : "11.90" }
+					]
+				},
+				"part_beef" : {
+					"title" : "Hovädzie mäso",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "501", "name" : "Hovädzie s cibuľou, 250 g", "price" : "7.90" },
+						{ "no" : "502", "name" : "Hovädzie ostré a suché, 250 g", "price" : "7.90" },
+						{ "no" : "503", "name" : "Hovädzie so zeleninou a s ústricovou omáčkou, 250 g", "price" : "7.90" },
+						{ "no" : "504", "name" : "Hovädzie s pórom a feferónkami, 250 g", "price" : "9.90" },
+						{ "no" : "505", "name" : "Hovädzie mäso so špeciálnou omáčkou na horúcej platni, 250 g", "price" : "9.90" },
+						{ "no" : "506", "name" : "Hovädzie s cesnakovými výhonkami, 250 g", "price" : "11.90" }
+					]
+				},
+				"part_fish" : {
+					"title" : "Ryby a plody mora",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "601", "name" : "Platýž varený v špeciálnej omáčke, 250 g", "price" : "11.90" },
+						{ "no" : "602", "name" : "Dusený morský vlk, 300 g / 400 g", "price" : "12.90 / 15.90" },
+						{ "no" : "603", "name" : "Pražené mušle s chilli, 350 g", "price" : "11.90" },
+						{ "no" : "604", "name" : "Pražené kalamáre s medvedím cesnakom, 250 g", "price" : "11.90" },
+						{ "no" : "605", "name" : "Dusené krevety s čínskou brokolicou, 200 g", "price" : "14.90" },
+						{ "no" : "606", "name" : "Pražené olúpané krevety s korením, 200 g", "price" : "14.90" },
+						{ "no" : "607", "name" : "Mušle sv. Jakuba s čínskou brokolicou, 200 g", "price" : "16.90" }
+					]
+				},
+				"part_vegetable" : {
+					"title" : "Zeleninové jedlá",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "701", "name" : "Budhistické pôstne jedlo, 250 g", "price" : "4.90" },
+						{ "no" : "702", "name" : "Ostrokyslá čínska kapusta, 250 g", "price" : "4.90" },
+						{ "no" : "703", "name" : "Pražené zemiaky s paprikou, 250 g", "price" : "4.90" },
+						{ "no" : "704", "name" : "Pražený čínsky špenát “Kongxin-Cai”s cesnakom, 200 g", "price" : "5.90" },
+						{ "no" : "705", "name" : "Vajíčková omeleta s medvedím cesnakom, 250 g", "price" : "5.90" },
+						{ "no" : "706", "name" : "Pražená čínska zelenina “You-Cai” s hubami, 250 g", "price" : "6.90" },
+						{ "no" : "707", "name" : "Pražená čínska brokolica v sójovej omáčke, 200 g", "price" : "6.90" }
+					]
+				},
+				"part_specialities" : {
+					"title" : "Špeciality",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "801", "name" : "Tofu na spôsob Ma–po s hovädzím mäsom, 300 g", "price" : "6.90" },
+						{ "no" : "802", "name" : "Baklažán Yu–iang v keramickom hrnci, 300 g", "price" : "6.90" },
+						{ "no" : "803", "name" : "Pražený baklažán s bravčovým mäsom, 250 g", "price" : "7.90" },
+						{ "no" : "804", "name" : "Pikantné zelené fazuľky s bravčovým mäsom, 250 g", "price" : "7.90" },
+						{ "no" : "805", "name" : "Jahňacie mäso s cibuľovou vňaťou, 250 g", "price" : "12.90" },
+						{ "no" : "806", "name" : "Rybí filet a kyslá kapusta, 400 g / 800 g", "price" : "9.90/14.90" }
+					]
+				},
+				"part_side" : {
+					"title" : "Prílohy",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "921", "name" : "Jasmínová ryža, 120 g", "price" : "1.50" },
+						{ "no" : "922", "name" : "Hranolky, 120 g", "price" : "1.20" },
+						{ "no" : "923", "name" : "Pórové placky, 250 g", "price" : "5.50" }
+					]
+				},
+				"part_rice" : {
+					"title" : "Pražená ryža a rezance",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "901", "name" : "Pražená ryža s vajíčkom a mladou cibuľkou, 200 g", "price" : "2.50" },
+						{ "no" : "902", "name" : "Pražená ryža s vajíčkom a zeleninou, 200 g", "price" : "2.90" },
+						{ "no" : "903", "name" : "Pražená ryža s vajíčkom a krevetami, 200 g", "price" : "4.90" },
+						{ "no" : "904", "name" : "“Nasi-goreng“ pražená ryža s kuracím mäsom, 400 g", "price" : "5.90" },
+						{ "no" : "911", "name" : "Pražené ryžové rezance so zeleninou, 200 g", "price" : "3.90" },
+						{ "no" : "912", "name" : "Pražené rezance s bravčovým mäsom, 200 g", "price" : "4.90" },
+						{ "no" : "913", "name" : "Pražené ryžové rezance s hovädzím mäsom a zeleninou, 200 g", "price" : "5.90" },
+						{ "no" : "914", "name" : "Pražené sklenené rezance so zeleninou, 200 g", "price" : "5.90" },
+						{ "no" : "915", "name" : "Rezance “zhajiang-mian”, 200 g", "price" : "6.90" }
+					]
+				},
+				"part_fondue" : {
+					"title" : "Čínske fondue",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "M1", "name" : "Polievka na fondue", "price" : "9.90" },
+						{ "no" : "M2", "name" : "Omáčka na fondue", "price" : "1.90" },
+						{ "no" : "M3", "name" : "Jahňacie mäso, 200 g", "price" : "9.90" },
+						{ "no" : "M4", "name" : "Hovädzie mäso, 200 g", "price" : "9.90" },
+						{ "no" : "M5", "name" : "Krevety, 200 g", "price" : "9.90" },
+						{ "no" : "M6", "name" : "Kalmary, 200 g", "price" : "8.90" },
+						{ "no" : "M7", "name" : "Rybacie guľky, 200 g", "price" : "6.90" },
+						{ "no" : "M8", "name" : "Krevetové guličky, 200 g", "price" : "6.90" },
+						{ "no" : "M9", "name" : "Miešaný mäsove guličky, 200 g", "price" : "6.90" },
+						{ "no" : "M10", "name" : "Hovädzie držky, 200 g", "price" : "6.90" },
+						{ "no" : "M11", "name" : "Krvavé tofu, 200 g", "price" : "5.90" },
+						{ "no" : "M12", "name" : "Tofu, 200 g", "price" : "2.90" },
+						{ "no" : "M13", "name" : "Vyprážané Tofu, 150 g", "price" : "3.90" },
+						{ "no" : "M14", "name" : "Sklenené rezance, 200 g", "price" : "3.90" },
+						{ "no" : "M15", "name" : "Taro, 200 g", "price" : "3.90" },
+						{ "no" : "M16", "name" : "Huby, 150 g", "price" : "5.90" },
+						{ "no" : "M17", "name" : "Čínska kapusta, 200 g", "price" : "2.90" },
+						{ "no" : "M18", "name" : "Špenát, 180 g", "price" : "3.90" },
+						{ "no" : "M19", "name" : "Sezónna zelenina, 180 g", "price" : "3.90" },
+						{ "no" : "M20", "name" : "Koruna daisy, 180 g", "price" : "4.50" },
+						{ "no" : "M21", "name" : "Ryžové cake, 180 g", "price" : "4.50" },
+						{ "no" : "M22", "name" : "Koriander, 50 g", "price" : "2.50" }
+					]
+				},
+				"part_desert" : {
+					"title" : "Dezerty",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "951", "name" : "Vyprážané sézamové guličky, 4ks", "price" : "2.50" },
+						{ "no" : "952", "name" : "Vyprážané miešané ovocie v mede, 120 g", "price" : "2.90" },
+						{ "no" : "953", "name" : "Miešaná zmrzlina s ovocím, 150 g", "price" : "2.90" },
+						{ "no" : "954", "name" : "Banánový split, 150 g", "price" : "2.90" },
+						{ "no" : "955", "name" : "Flambovaná vyprážaná zmrzlina, 150 g", "price" : "3.50" },
+						{ "no" : "956", "name" : "Kokosové guličky, 150 g", "price" : "4.50" },
+						{ "no" : "957", "name" : "Horúca čokoládová tortička s vanilkovou zmrzlinou, 150 g", "price" : "4.50" }
+					]
+				}
+			}
+		},
+		"section_lunch_menu" : {
+			"title" : "Obedové menu",
+			"anchor" : "obedove-menu",
+			"parts" : {
+				"part_oneperson" : {
+					"title" : "Menu pre 1 osobu",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "B1", "name" : "Polievka podľa vlastného výberu:", "price" : "10.90" },
+						{ "no" : "", "name" : "Ostrokyslá alebo Kuracia polievka, 0.25 l", "price" : "" },
+						{ "no" : "", "name" : "Chrumkavá kačica, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Kuracie sladkokyslé, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Jasmínová ryža, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Dezert – čerstvé ovocie", "price" : "" }
+					]
+				},
+				"part_twoperson" : {
+					"title" : "Menu pre 2 osoby",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "B2", "name" : "Polievka podľa vlastného výberu:", "price" : "22.90" },
+						{ "no" : "", "name" : "Ostrokyslá alebo Kuracia polievka, 0.25 l", "price" : "" },
+						{ "no" : "", "name" : "Miešaný šalát, 120 g", "price" : "" },
+						{ "no" : "", "name" : "Kuracie s bambusovými výhonkami a hubami, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Chrumkavá kačica, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Hovädzie “Sečuán”, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Pražené ryžové rezance so zeleninou, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Jasmínová ryža, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Dezert – čerstvé ovocie", "price" : "" }
+					]
+				},
+				"part_fourperson" : {
+					"title" : "Menu pre 4 osoby",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "B3", "name" : "Polievka podľa vlastného výberu:", "price" : "39.90" },
+						{ "no" : "", "name" : "Ostrokyslá alebo Kuracia polievka, 0.25 l", "price" : "" },
+						{ "no" : "", "name" : "Miešaný šalát, 120 g", "price" : "" },
+						{ "no" : "", "name" : "Bravčové s bambusovými výhonkami a hubami, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Kuracie “Gongbao”, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Chrumkavá kačica, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Hovädzie s cibuľou, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Kuracie sladkokyslé, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Kačica “Sečuán“, 100 g", "price" : "" },
+						{ "no" : "", "name" : "Varená jasmínová ryža, 200 g", "price" : "" },
+						{ "no" : "", "name" : "Dezert – čerstvé ovocie", "price" : "" }
+					]
+				}
+			}
+		},
+		"section_wines" : {
+			"title" : "Vínny lístok",
+			"anchor" : "vinny-listok",
+			"parts" : {
+				"part_liquers" : {
+					"title" : "Likéry, pálenky a aperitívy",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "", "name" : "<strong>BITTERS AND APERITIFS</strong>", "price" : "" },
+						{ "no" : "", "name" : "Becherovka, 4 cl", "price" : "2.60" },
+						{ "no" : "", "name" : "Campari, 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "Fernet, 4 cl", "price" : "2.60" },
+						{ "no" : "", "name" : "Fernet citrus, 4 cl", "price" : "2.60" },
+						{ "no" : "", "name" : "Jagermeister, 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "Slivovica (Bosacka), 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "Hruška (Spiš), 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>VODKA</strong>", "price" : "" },
+						{ "no" : "", "name" : "Vodka Fínska, 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "Vodka Absolut, 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>WHISKY</strong>", "price" : "" },
+						{ "no" : "", "name" : "Chivas Regas 12.y.o., 4 cl", "price" : "4.80" },
+						{ "no" : "", "name" : "Jack daniels, 4 cl", "price" : "3.60" },
+						{ "no" : "", "name" : "Jim Beam, 4 cl", "price" : "3.30" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>COGNAC AND BRANDY</strong>", "price" : "" },
+						{ "no" : "", "name" : "Hennessy v.s., 4 cl", "price" : "5.00" },
+						{ "no" : "", "name" : "Remy Martin V.S.O.P., 4 cl", "price" : "7.50" },
+						{ "no" : "", "name" : "Karpatske brandy špeciál, 4 cl", "price" : "3.50" },
+						{ "no" : "", "name" : "Rum pyrat, 4 cl", "price" : "3.50" }
+
+					]
+				},
+				"part_special_wines" : {
+					"title" : "Špeciálne vína",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "", "name" : "Slivkové víno (teplé), 8 cl", "price" : "3.00" },
+						{ "no" : "", "name" : "Saké (teplé), 8 cl", "price" : "3.00" },
+						{ "no" : "", "name" : "Sóju chamisul Classic (fľaškové/bottled), 350ml", "price" : "9.90" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>VERMOUTH</strong>", "price" : "" },
+						{ "no" : "", "name" : "Martini extra, 8 cl", "price" : "3.00" },
+						{ "no" : "", "name" : "Martini Bianco, 8 cl", "price" : "3.00" },
+						{ "no" : "", "name" : "Martini rosso, 8 cl", "price" : "3.00" }
+					]
+				},
+				"part_glass_wines" : {
+					"title" : "Rozlievané biele vína",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>BIELE</strong>", "price" : "" },
+						{ "no" : "", "name" : "Devín – polosuché (Pivnica Čajkov), 0.1 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Veltlínske zelené suché (Pivnica Čajkov), 0.1 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Rulandské šede suché (Mrva Stanko), 0.1 l", "price" : "2.20" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>RUŽOVÉ</strong>", "price" : "" },
+						{ "no" : "", "name" : "Cabernet Sauvignon (Pivnica Čajkov) 0.1 l", "price" : "1.80" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>ČERVENÉ</strong>", "price" : "" },
+						{ "no" : "", "name" : "Svätovavrinecké (Pivnica Čajkov), 0.1 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Frankovka Modra (Pivnica Čajkov), 0.1 l", "price" : "2.00" }
+					]
+				},
+				"part_bottle_wines" : {
+					"title" : "Vína vo fľaši",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "", "name" : "<strong>BIELE</strong>", "price" : "" },
+						{ "no" : "", "name" : "Sauvignon polosuché (Vysoké pole), 0.75 l", "price" : "15.00" },
+						{ "no" : "", "name" : "Veltlinske zelene suché (Vysoké pole), 0.75 l", "price" : "15.00" },
+						{ "no" : "", "name" : "Rulandske šedé (Mrva Stanko), 0.75 l", "price" : "25.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>RUŽOVÉ</strong>", "price" : "" },
+						{ "no" : "", "name" : "Cabernet Sauvignon, 0.75 l", "price" : "15.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>ČERVENÉ</strong>", "price" : "" },
+						{ "no" : "", "name" : "Slovenské/Slovakia", "price" : "" },
+						{ "no" : "", "name" : "Frankovka Modra suché (Pivnica Čajkov), 0.75 l", "price" : "20.00" },
+						{ "no" : "", "name" : "Cabernet Sauvignon ročník 2012", "price" : "" },
+						{ "no" : "", "name" : "(Výber z hrozna, suché, Mrva Stanko), 0.75 l", "price" : "25.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>FRANCÚZSKE</strong>", "price" : "" },
+						{ "no" : "", "name" : "Chateau de Cérons, r. 2010, červené, 0.75l", "price" : "40.00" },
+						{ "no" : "", "name" : "Chateau Clou du PIN, r. 2010, 0.75 l", "price" : "20.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>ŠAMPANSKÉ</strong>", "price" : "" },
+						{ "no" : "", "name" : "Hubert brit, 0.75 l", "price" : "10.00" },
+						{ "no" : "", "name" : "Hubert polosladké ružové, 0.75 l", "price" : "10.00" },
+						{ "no" : "", "name" : "Hubert de–luxe, 0.75l", "price" : "15.00" }
+					]
+				}
+			}
+		},
+		"section_drink" : {
+			"title" : "Nápojový lístok",
+			"anchor" : "napojovy-listok",
+			"parts" : {
+				"part_beer" : {
+					"title" : "Pivo",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "", "name" : "<strong>ČAPOVANÉ</strong>", "price" : "" },
+						{ "no" : "", "name" : "Zlatý Bažant 10°, 0.3l", "price" : "1.50" },
+						{ "no" : "", "name" : "Zlatý Bažant 10°, 0.3l", "price" : "2.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>FĽAŠKOVÉ</strong>", "price" : "" },
+						{ "no" : "", "name" : "Pilsner Urquell 12°, 0.3 l", "price" : "2.00" },
+						{ "no" : "", "name" : "Pilsner Urquell 12°, 0.5 l", "price" : "2.50" },
+						{ "no" : "", "name" : "Zlatý Bažant Radler citrón nealko, 0.5 l", "price" : "2.50" },
+						{ "no" : "", "name" : "Zlatý Bažant Nealko, 0.3 l", "price" : "2.20" },
+						{ "no" : "", "name" : "Čínske pivo TSINGTAO, 0.3 l", "price" : "3.00" }
+					]
+				},
+				"part_soft" : {
+					"title" : "Nealkoholické nápoje",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "", "name" : "Coca–Cola, 0.33 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Coca–Cola Zero, 0.33 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Fanta, 0.33 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Sprite, 0.33 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Tonic kinley, 0.25 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Tonic zázvorový, 0.25 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Kofola, 0.33 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Vinea, 0.25 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Romerquelle sýtená, 0.33 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Romerquelle nesýtená, 0.33 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Romerquelle nesýtená, 0.75 l", "price" : "3.00" },
+						{ "no" : "", "name" : "Romerquelle sýtená, 0.75 l", "price" : "3.00" },
+						{ "no" : "", "name" : "Soda, 0.1 l", "price" : "0.30" },
+						{ "no" : "", "name" : "Nestea broskyňa, 0.2 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Nestea citrus, 0.2 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Cappy jablko, 0.2 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Cappy pomaranč, 0.2 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Líci džús, 0.25 l", "price" : "2.00" },
+						{ "no" : "", "name" : "Aloe vera, 0.50 l", "price" : "3.00" },
+						{ "no" : "", "name" : "Fresh juices, 0.1 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Duojiabao cool tea, 0.25 l", "price" : "2.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "Domáca limonáda, 0.50 l", "price" : "" },
+						{ "no" : "", "name" : "Domáca limonáda, 1.00 l", "price" : "" }
+					]
+				},
+				"part_hot" : {
+					"title" : "Teplé nápoje",
+					"icon" : "ico-polievky.png",
+					"meals" : [
+						{ "no" : "", "name" : "Espresso, 7 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Coffee – bez kofeínu, 7 g", "price" : "1.90" },
+						{ "no" : "", "name" : "Espresso double, 7 g", "price" : "2.20" },
+						{ "no" : "", "name" : "Capuccino, 7 g", "price" : "2.40" },
+						{ "no" : "", "name" : "Vienna coffee, 7 g", "price" : "2.40" },
+						{ "no" : "", "name" : "Ľadová káva – iced coffee, 7 g", "price" : "2.90" },
+						{ "no" : "", "name" : "Jasminovy čaj, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Zelený čaj, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Kamilkovy čaj, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Ovocný čaj, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Mätový čaj, 5g", "price" : "1.60" },
+						{ "no" : "", "name" : "Čierny čaj, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Zázvorový čaj, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>ČERSTVÉ ČAJE</strong>", "price" : "" },
+						{ "no" : "", "name" : "Čaj z čerstvej mäty s medom a citrónom, 0.5 l", "price" : "2.90" },
+						{ "no" : "", "name" : "Mätovo – zázvorový horúci čaj, 0.5 l", "price" : "2.90" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "Med", "price" : "0.30" },
+						{ "no" : "", "name" : "Citrón – celý", "price" : "0.50" },
+						{ "no" : "", "name" : "Mlieko do kávy", "price" : "0.30" }
+					]
+				}
+			}
+		}
+	}
 }

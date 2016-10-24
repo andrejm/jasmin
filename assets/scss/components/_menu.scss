@@ -4,7 +4,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: rem-calc( 18 );
+	font-size: rem-calc( 14 );
+
+	@include breakpoint( medium ) {
+		font-size: rem-calc( 18 );
+	}
 
 	&__item {
 		text-decoration: none;
@@ -13,17 +17,11 @@
 		margin: rem-calc( 0 20 );
 
 		&::after {
-			content: '';
-			display: block;
-			height: 2px;
-			width: 0;
-			background: transparent;
-			transition: width .5s ease, background-color .5s ease;
+			@include underline();
 		}
 		&:hover::after,
 		&--active::after {
-			width: 100%;
-			background: $primary-color;
+			@include underline-hover( $primary-color )
 		}
 	}
 

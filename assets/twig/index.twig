@@ -15,14 +15,14 @@
 		<div class="baseinfo__lang baseinfo__lang--left">
 			<a href="{{ langswitch.left.link }}" class="langhref">{{ langswitch.left.title }}</a>
 		</div>
+		<div class="baseinfo__lang baseinfo__lang--right">
+			<a href="{{ langswitch.right.link }}" class="langhref langhref--right">{{ langswitch.right.title }}</a>
+		</div>
 		<div class="baseinfo__address">
 			<p>
 				{{ address.name }}, {{ address.open }} <br>
 				{{ address.contact }}, <a href="{{ address.map }}">{{ address.address }}</a>
 			</p>
-		</div>
-		<div class="baseinfo__lang baseinfo__lang--right">
-			<a href="{{ langswitch.right.link }}" class="langhref langhref--right">{{ langswitch.right.title }}</a>
 		</div>
 
 	</section>
@@ -52,20 +52,164 @@
 <section id="{{ menu.menu.id }}" class="js-section js-section-trigger-menu foodmenu">
 	<div class="row">
 		<div class="small-12 columns">
-			<h2>Tu bude menu</h2>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-		</div>
+			{# https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion #}
+
+			<div class="menu-sections js-menu-sections">
+				<ul class="menu-sections__pagination">
+				{% for section in foodmenu %}
+					<li><a href="#{{ section.anchor }}">{{ section.title }}</a></li>
+				{% endfor %}
+				</ul>
+
+				{% for section in foodmenu %}
+					<div id="{{ section.anchor }}" class="menu-sections__section">
+
+						<div id="pagination-{{ section.anchor }}" class="menu-paging js-menu-paging" data-for-slider="{{ section.anchor }}">
+							{% for part in section.parts %}
+							<div class="menu-paging__item">
+								<img src="images/{{ part.icon }}" alt="" class="menu-paging__icon">
+								<span class="menu-paging__label">{{ part.title }}</span>
+							</div>
+							{% endfor %}
+						</div>
+
+						<div id="slider-{{ section.anchor }}" class="menu-pages js-menu-pages">
+							{% for part in section.parts %}
+							<div class="menu-pages__page">
+								<h4 class="menu-pages__title">{{ part.title }}</h4>
+								{% for meal in part.meals %}
+								<div class="menu-list-item">
+									<div class="menu-list-item__number">
+										{% if meal.no is not empty %}
+											{{ meal.no }}.
+										{% endif %}
+									</div>
+									<div class="menu-list-item__name">{{ meal.name }}</div>
+									<div class="menu-list-item__price">
+										{% if meal.price is not empty %}
+											{{ meal.price }}&nbsp;€
+										{% endif %}
+									</div>
+								</div>
+								{% endfor %}
+							</div>
+							{% endfor %}
+						</div>
+						
+					</div>
+				{% endfor %}
+			</div>
+
+
+
+
+
+
+
+			{# <div class="menu-sections js-menu-sections">
+				<ul class="menu-sections__pagination">
+					<li><a href="#jedalny">Jedalny listok</a></li>
+					<li><a href="#obedove">Obedove menu</a></li>
+				</ul>
+
+				<div id="jedalny" class="menu-sections__section">
+
+					<div class="menu-paging js-menu-paging">
+						<div class="menu-paging__item">
+							<img src="images/ico-polievky.png" alt="" class="menu-paging__icon">
+							<span class="menu-paging__label">Hlavné jedlá</span>
+						</div>
+						<div class="menu-paging__item">
+							<img src="images/ico-polievky.png" alt="" class="menu-paging__icon">
+							<span class="menu-paging__label">Polievky</span>
+						</div>
+						<div class="menu-paging__item">
+							<img src="images/ico-polievky.png" alt="" class="menu-paging__icon">
+							<span class="menu-paging__label">Prílohy</span>
+						</div>
+					</div>
+					
+					<div class="menu-pages js-menu-pages">
+						<div class="menu-pages__page">
+							<h4 class="menu-pages__title">Hlavné jedlá</h4>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">701.</div>
+								<div class="menu-list-item__name">Kuracia polievka s bambusovými výhonkami a hubami, 0.25l</div>
+								<div class="menu-list-item__price">4.90 €</div>
+							</div>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">702.</div>
+								<div class="menu-list-item__name">Ostrokyslá čínska kapusta, 250 g</div>
+								<div class="menu-list-item__price">4.90 €</div>
+							</div>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">703.</div>
+								<div class="menu-list-item__name">Pražené zemiaky s paprikou, 250 g</div>
+								<div class="menu-list-item__price">4.90 €</div>
+							</div>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">704.</div>
+								<div class="menu-list-item__name">Pražený čínsky špenát “Kongxin-Cai”s cesnakom, 200 g</div>
+								<div class="menu-list-item__price">5.90 €</div>
+							</div>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">704.</div>
+								<div class="menu-list-item__name">Polievka dňa, 0.25 l</div>
+								<div class="menu-list-item__price">5.90 €</div>
+							</div>
+						</div>
+
+						<div class="menu-pages__page">
+							<h4 class="menu-pages__title">Polievky</h4>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">701.</div>
+								<div class="menu-list-item__name">Budhistické pôstne jedlo, 250 g</div>
+								<div class="menu-list-item__price">4.90 €</div>
+							</div>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">702.</div>
+								<div class="menu-list-item__name">Ostrokyslá čínska kapusta, 250 g</div>
+								<div class="menu-list-item__price">4.90 €</div>
+							</div>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">703.</div>
+								<div class="menu-list-item__name">Pražené zemiaky s paprikou, 250 g</div>
+								<div class="menu-list-item__price">4.90 €</div>
+							</div>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">704.</div>
+								<div class="menu-list-item__name">Pražený čínsky špenát “Kongxin-Cai”s cesnakom, 200 g</div>
+								<div class="menu-list-item__price">5.90 €</div>
+							</div>
+						</div>
+
+						<div class="menu-pages__page">
+							<h4 class="menu-pages__title">Prílohy</h4>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">921.</div>
+								<div class="menu-list-item__name">Jasmínová ryža, 120 g</div>
+								<div class="menu-list-item__price">4.50 €</div>
+							</div>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">922.</div>
+								<div class="menu-list-item__name">Hranolky, 120 g</div>
+								<div class="menu-list-item__price">4.90 €</div>
+							</div>
+							<div class="menu-list-item">
+								<div class="menu-list-item__number">923.</div>
+								<div class="menu-list-item__name">Pórové placky, 250 g</div>
+								<div class="menu-list-item__price">4.90 €</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="obedove" class="menu-sections__section">
+					tu budu veci k obedovemu menü
+				</div>
+					
+			</div>
+		</div> #}
 	</div>
 </section>
 

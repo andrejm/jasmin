@@ -1,0 +1,63 @@
+.menu-list-item {
+	display: flex;
+	flex-flow: row wrap;
+
+	margin-bottom: rem-calc( 18 );
+
+	@include breakpoint( medium ) {
+		margin-bottom: rem-calc( 9 );
+	}
+
+	&__number,
+	&__price {
+		flex-basis: 50%;
+
+		@include breakpoint( medium ) {
+			flex-basis: 10%;
+		}
+	}
+
+	&__number {
+		text-align: right;
+		position: relative;
+		padding-right: rem-calc( 10 );
+
+		&::after {
+			content: '/';
+			position: absolute;
+			top: 0;
+			left: 100%;
+		}
+
+		@include breakpoint( medium ) {
+			text-align: left;
+			padding: 0;
+
+			&::after {
+				content: '';
+			}
+		}
+	}
+
+	&__price {
+		order: 2;
+		padding-left: rem-calc( 13 );
+
+		@include breakpoint( medium ) {
+			order: 3;
+			padding: 0;
+		}
+	}
+
+	&__name {
+		flex-basis: 100%;
+		order: 3;
+		text-align: center;
+
+		@include breakpoint( medium ) {
+			order: 2;
+			flex-basis: 80%;
+			text-align: left;
+		}
+	}
+}
