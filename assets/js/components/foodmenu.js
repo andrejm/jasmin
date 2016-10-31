@@ -6,6 +6,8 @@ jQuery(document).ready(function($) {
 	    scrollToAccordion: false,
 	    scrollToAccordionOnLoad: false,
 	    setHash: true,
+	    // animation: 'slide',
+	    // animationQueue: 'accordion',
 	    load: activateSlicks(),
 	    activate: function(event, tab){
 	    	// $(window).trigger('resize');
@@ -38,15 +40,16 @@ jQuery(document).ready(function($) {
 			});
 
 			$paginationSlider.slick({
-				slidesToShow: 2,
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				asNavFor: '#slider-' + target,
 				dots: false,
-				arrows: false,
-				centerMode: false,
+				arrows: true,
+				centerMode: true,
+				infinite: false,
 				focusOnSelect: true,
 				// initialSlide: 1,
-				// variableWidth: true,
+				variableWidth: true,
 				mobileFirst : true,
 				responsive : [
 					{

@@ -302,6 +302,8 @@ jQuery(document).ready(function($) {
 	    scrollToAccordion: false,
 	    scrollToAccordionOnLoad: false,
 	    setHash: true,
+	    // animation: 'slide',
+	    // animationQueue: 'accordion',
 	    load: activateSlicks(),
 	    activate: function(event, tab){
 	    	// $(window).trigger('resize');
@@ -334,15 +336,16 @@ jQuery(document).ready(function($) {
 			});
 
 			$paginationSlider.slick({
-				slidesToShow: 2,
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				asNavFor: '#slider-' + target,
 				dots: false,
-				arrows: false,
-				centerMode: false,
+				arrows: true,
+				centerMode: true,
+				infinite: false,
 				focusOnSelect: true,
 				// initialSlide: 1,
-				// variableWidth: true,
+				variableWidth: true,
 				mobileFirst : true,
 				responsive : [
 					{
@@ -427,7 +430,16 @@ jQuery(document).ready(function($) {
 		slidesToScroll: 1,
 		dots: true,
 		arrows: false,
-		variableWidth: true
+		variableWidth: false,
+		mobileFirst : true,
+		responsive : [
+			{
+				breakpoint : 1024,
+				settings : {
+					variableWidth: true,
+				}
+			}
+		]
 	});
 });
 jQuery(document).ready(function($) {

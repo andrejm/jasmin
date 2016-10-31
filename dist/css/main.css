@@ -4884,6 +4884,10 @@ b {
 
 /* Icons */
 /* Arrows */
+.slick-slider {
+  margin: 0 0.3125rem;
+}
+
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -4924,7 +4928,7 @@ b {
 .slick-prev:before,
 .slick-next:before {
   font-family: Idealista, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1;
   color: white;
   opacity: 1;
@@ -4933,12 +4937,12 @@ b {
 }
 
 .slick-prev {
-  left: -25px;
+  left: -20px;
 }
 
 [dir="rtl"] .slick-prev {
   left: auto;
-  right: -25px;
+  right: -20px;
 }
 
 .slick-prev:before {
@@ -4950,11 +4954,11 @@ b {
 }
 
 .slick-next {
-  right: -25px;
+  right: -20px;
 }
 
 [dir="rtl"] .slick-next {
-  left: -25px;
+  left: -20px;
   right: auto;
 }
 
@@ -5103,6 +5107,23 @@ b {
   width: 0;
   background: transparent;
   transition: width .5s ease, background-color .5s ease;
+}
+
+.r-tabs .r-tabs-anchor::before {
+  content: '';
+  background: transparent url("../../images/arrow-right.svg") no-repeat center center;
+  background-size: contain;
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (min-width: 40em) {
+  .r-tabs .r-tabs-anchor::before {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 40em) {
@@ -5635,10 +5656,19 @@ b {
   }
 }
 
+.menu-paging__label {
+  padding: 0 0.4375rem;
+}
+
 @media screen and (min-width: 40em) {
   .menu-paging__label {
+    padding: 0;
     display: none;
   }
+}
+
+.slick-current .menu-paging__label {
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .menu-paging__icon {

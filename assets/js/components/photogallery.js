@@ -5,6 +5,15 @@ jQuery(document).ready(function($) {
 		slidesToScroll: 1,
 		dots: true,
 		arrows: false,
-		variableWidth: true
+		variableWidth: false,
+		mobileFirst : true,
+		responsive : [
+			{
+				breakpoint : 1024,
+				settings : {
+					variableWidth: true,
+				}
+			}
+		]
 	});
 });
