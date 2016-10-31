@@ -111,6 +111,30 @@ gulp.task('twig', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('twig-en', function () {
+    'use strict';
+    var data = require('./data-en.json');
+
+    return gulp.src(paths.twigTemplates)
+        .pipe(twig({
+            data: data
+        }))
+        .pipe(gulp.dest('./en'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('twig-cn', function () {
+    'use strict';
+    var data = require('./data-cn.json');
+
+    return gulp.src(paths.twigTemplates)
+        .pipe(twig({
+            data: data
+        }))
+        .pipe(gulp.dest('./cn'))
+        .pipe(browserSync.stream());
+});
+
 // Uglify JS
 gulp.task('uglify', function() {
     gulp.src( ['assets/js/main.js'] )
@@ -180,3 +204,6 @@ gulp.task('serve', function() {
 });
 
 gulp.task('default', [ 'copyfonts', 'copyScripts', 'svgstore', 'sass', 'twig', 'concat', 'serve' ]);
+gulp.task('sk', [ 'copyfonts', 'copyScripts', 'svgstore', 'sass', 'twig', 'concat' ]);
+gulp.task('en', [ 'copyfonts', 'copyScripts', 'svgstore', 'sass', 'twig-en', 'concat' ]);
+gulp.task('cn', [ 'copyfonts', 'copyScripts', 'svgstore', 'sass', 'twig-cn', 'concat' ]);
