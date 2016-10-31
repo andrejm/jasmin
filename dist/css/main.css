@@ -5037,6 +5037,10 @@ b {
   opacity: 1;
 }
 
+.menu-paging .slick-current {
+  border: 1px solid #a82d53;
+}
+
 .r-tabs .r-tabs-nav {
   margin: 0;
   padding: 0;

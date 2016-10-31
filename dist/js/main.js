@@ -326,6 +326,7 @@ jQuery(document).ready(function($) {
 			$targetSlider.slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				infinite: false,
 				arrows: false,
 				dots: false,
 				adaptiveHeight: true,
@@ -340,6 +341,8 @@ jQuery(document).ready(function($) {
 				arrows: false,
 				centerMode: false,
 				focusOnSelect: true,
+				// initialSlide: 1,
+				// variableWidth: true,
 				mobileFirst : true,
 				responsive : [
 					{
@@ -359,7 +362,7 @@ jQuery(document).ready(function($) {
 					{
 						breakpoint : 840,
 						settings : {
-							slidesToShow: 15,
+							slidesToShow: 14,
 							centerMode: false,
 						}
 					}
