@@ -29,14 +29,14 @@
 
 	"address" : {
 		"name" : "Čínska reštaurácia Jasmin",
-		"open" : "Otvorené denne: 11:00 — 23:00",
-		"contact" : "Kontakt: + 421 2 54 41 51 82",
-		"address" : "Židovská 7, 811 01 Bratislava",
+		"open" : "Otvorené denne: 11:00&nbsp;—&nbsp;23:00",
+		"contact" : "Kontakt: + 421&nbsp;2&nbsp;54&nbsp;41&nbsp;51&nbsp;82",
+		"address" : "Židovská&nbsp;7, 811&nbsp;01 Bratislava",
 		"map" : "https://www.google.com/maps/place/%C5%BDidovsk%C3%A1+4716%2F7,+811+01+Bratislava,+Slovakia/@48.1426643,17.1017221,17z/data=!3m1!4b1!4m5!3m4!1s0x476c895d71a02ee1:0x3784ec9c30a7dfb0!8m2!3d48.1426607!4d17.1039108"
 	},
 
 	"aboutpage" : {
-		"title" : "O reštaurácii",
+		"title" : "O&nbsp;reštaurácii",
 		"desc" : [
 			"Milí priatelia, stretávame sa na tomto mieste už od roku 1996.",
 			"Vďaka vám, milí naši klienti, má náš príbeh vo vašej krajine pokračovanie. V krajine, ktorá nás prijala a poskytla nám príležitosť robiť to, čo máme radi. V krajine, v ktorej sme našli zázemie pre nás a pre naše deti. V krajine, ktorú dnes vďaka vám môžeme nazývať domovom. Sídlime pod hradom v historickom centre Bratislavy oproti Dómu svätého Martina. Máme 80 miest na vnútorné sedenie a v letných mesiacoch 18 miest na terase.",
@@ -55,8 +55,8 @@
 			"address" : {
 				"title" : "Adresa",
 				"lines" : [
-					"Čínska reštaurácia Jasmín 1, Židovská 7",
-					"811 01 Bratislava, Slovenská republika"
+					"Čínska reštaurácia Jasmín&nbsp;1, Židovská&nbsp;7",
+					"811&nbsp;01 Bratislava, Slovenská republika"
 				]
 			},
 			"contact" : {

@@ -78,8 +78,10 @@ h2, .pr-beta {
     color: #000;
     margin-top: rem-calc(60);
     margin-bottom: rem-calc(30);
-    + h3, .pr-gamma {
-        margin-top: -10px;
+
+    @include breakpoint( medium ) {
+        font-size: rem-calc(24);
+        text-align: center;
     }
 }
 

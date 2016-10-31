@@ -21,7 +21,7 @@
 		<div class="baseinfo__address">
 			<p>
 				{{ address.name }}, {{ address.open }} <br>
-				{{ address.contact }}, <a href="{{ address.map }}">{{ address.address }}</a>
+				{{ address.contact }}, <a href="{{ address.map }}" target="_blank">{{ address.address }}</a>
 			</p>
 		</div>
 
@@ -50,55 +50,54 @@
 </section>
 
 <section id="{{ menu.menu.id }}" class="js-section js-section-trigger-menu foodmenu">
-	<div class="row">
-		<div class="small-12 columns">
+	<div class="foodmenu__inner">
 			{# https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion #}
 
-			<div class="menu-sections js-menu-sections">
-				<ul class="menu-sections__pagination">
-				{% for section in foodmenu %}
-					<li><a href="#{{ section.anchor }}">{{ section.title }}</a></li>
-				{% endfor %}
-				</ul>
+		<div class="menu-sections js-menu-sections">
+			<ul class="menu-sections__pagination">
+			{% for section in foodmenu %}
+				<li><a href="#{{ section.anchor }}">{{ section.title }}</a></li>
+			{% endfor %}
+			</ul>
 
-				{% for section in foodmenu %}
-					<div id="{{ section.anchor }}" class="menu-sections__section">
+			{% for section in foodmenu %}
+				<div id="{{ section.anchor }}" class="menu-sections__section">
 
-						<div id="pagination-{{ section.anchor }}" class="menu-paging js-menu-paging" data-for-slider="{{ section.anchor }}">
-							{% for part in section.parts %}
-							<div class="menu-paging__item">
-								<img src="images/{{ part.icon }}" alt="" class="menu-paging__icon">
-								<span class="menu-paging__label">{{ part.title }}</span>
-							</div>
-							{% endfor %}
+					<div id="pagination-{{ section.anchor }}" class="menu-paging js-menu-paging" data-for-slider="{{ section.anchor }}">
+						{% for part in section.parts %}
+						<div class="menu-paging__item">
+							<img src="images/{{ part.icon }}" alt="" class="menu-paging__icon">
+							<span class="menu-paging__label">{{ part.title }}</span>
 						</div>
-
-						<div id="slider-{{ section.anchor }}" class="menu-pages js-menu-pages">
-							{% for part in section.parts %}
-							<div class="menu-pages__page">
-								<h4 class="menu-pages__title">{{ part.title }}</h4>
-								{% for meal in part.meals %}
-								<div class="menu-list-item">
-									<div class="menu-list-item__number">
-										{% if meal.no is not empty %}
-											{{ meal.no }}.
-										{% endif %}
-									</div>
-									<div class="menu-list-item__name">{{ meal.name }}</div>
-									<div class="menu-list-item__price">
-										{% if meal.price is not empty %}
-											{{ meal.price }}&nbsp;€
-										{% endif %}
-									</div>
-								</div>
-								{% endfor %}
-							</div>
-							{% endfor %}
-						</div>
-						
+						{% endfor %}
 					</div>
-				{% endfor %}
-			</div>
+
+					<div id="slider-{{ section.anchor }}" class="menu-pages js-menu-pages">
+						{% for part in section.parts %}
+						<div class="menu-pages__page">
+							<h4 class="menu-pages__title">{{ part.title }}</h4>
+							{% for meal in part.meals %}
+							<div class="menu-list-item">
+								<div class="menu-list-item__number{% if meal.no is empty %} menu-list-item__number--empty{% endif %}">
+									{% if meal.no is not empty %}
+										{{ meal.no }}.
+									{% endif %}
+								</div>
+								<div class="menu-list-item__name">{{ meal.name }}</div>
+								<div class="menu-list-item__price">
+									{% if meal.price is not empty %}
+										{{ meal.price }}&nbsp;€
+									{% endif %}
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+						{% endfor %}
+					</div>
+					
+				</div>
+			{% endfor %}
+		</div>
 
 
 
@@ -225,6 +224,9 @@
 					{% endfor %}
 				</p>
 			{% endfor %}
+		</div>
+		<div class="footer__map">
+			<div id="map"></div>
 		</div>
 	</div>
 </footer>

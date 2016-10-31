@@ -1,5 +1,6 @@
 .moreinfo {
 	background-color: $jasmin-salmon;
+	position: relative;
 
 	&__inner {
 		@include flex-grid-row();
@@ -16,5 +17,11 @@
 
 	&__text {
 		padding-bottom: rem-calc( 35 );
+	}
+
+	&__photo {
+		@include breakpoint( large ) {
+			@include half-fullwidth-section();
+		}
 	}
 }

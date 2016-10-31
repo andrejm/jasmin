@@ -2,6 +2,8 @@
 	background: $white url('../../images/bg-photo.jpg') no-repeat center;
 	background-size: cover;
 
+	min-height: rem-calc(260);
+
 	@include breakpoint( medium ) {
 		min-height: rem-calc(520);
 

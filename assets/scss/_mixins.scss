@@ -45,3 +45,13 @@
 	width: 100%;
 	background: $underline-color;
 }
+
+@mixin half-fullwidth-section() {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	padding-right: 0;
+	overflow: hidden;
+}

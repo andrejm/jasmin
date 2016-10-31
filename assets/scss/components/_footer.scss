@@ -1,5 +1,6 @@
 .footer {
 	background-color: $jasmin-salmon;
+	position: relative;
 
 	&__inner {
 		@include flex-grid-row();
@@ -7,13 +8,14 @@
 
 	&__address {
 		@include flex-grid-column(12);
-		padding-top: rem-calc(80);
+		padding-top: rem-calc(20);
 		padding-bottom: rem-calc(200);
 		background: transparent url('../../images/kriziky.svg') no-repeat center bottom;
 		background-size: contain;
 
 		@include breakpoint( large ) {
 			@include flex-grid-column(6);
+			padding-top: rem-calc(80);
 		}
 	}
 
@@ -23,6 +25,15 @@
 
 	&__sectionsubtitle {
 		margin-bottom: 0;
+	}
+
+	&__map {
+		@include flex-grid-column( 12, 0 );
+
+		@include breakpoint( medium ) {
+			//@include flex-grid-column( 6 );
+			@include half-fullwidth-section();
+		}
 	}
 
 }

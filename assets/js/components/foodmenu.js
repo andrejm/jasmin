@@ -2,15 +2,16 @@ jQuery(document).ready(function($) {
 
 	$('.js-menu-sections').responsiveTabs({
 		// all options: https://github.com/jellekralt/Responsive-Tabs
-	    startCollapsed: false,
+	    startCollapsed: 'accordion',
 	    scrollToAccordion: false,
 	    scrollToAccordionOnLoad: false,
 	    setHash: true,
 	    load: activateSlicks(),
 	    activate: function(event, tab){
+	    	// $(window).trigger('resize');
 	    	$('.js-menu-paging').slick('reinit');
 	    	$('.js-menu-pages').slick('reinit');
-	    	console.log('reinitialize');
+	    	// console.log('reinitialize');
 	    }
 	});
 	
@@ -24,7 +25,7 @@ jQuery(document).ready(function($) {
 			var target = $paginationSlider.data('for-slider');
 			var $targetSlider = $('#slider-' + target);
 
-			console.log( $targetSlider );
+			// console.log( $targetSlider );
 
 			$targetSlider.slick({
 				slidesToShow: 1,
@@ -36,15 +37,29 @@ jQuery(document).ready(function($) {
 			});
 
 			$paginationSlider.slick({
-				slidesToShow: 3,
+				slidesToShow: 2,
 				slidesToScroll: 1,
 				asNavFor: '#slider-' + target,
 				dots: false,
-				arrows: true,
-				centerMode: true,
+				arrows: false,
+				centerMode: false,
 				focusOnSelect: true,
 				mobileFirst : true,
 				responsive : [
+					{
+						breakpoint : 480,
+						settings : {
+							slidesToShow: 3,
+							centerMode: false,
+						}
+					},
+					{
+						breakpoint : 640, //medium breakpoint
+						settings : {
+							slidesToShow: 6,
+							centerMode: false,
+						}
+					},
 					{
 						breakpoint : 840,
 						settings : {

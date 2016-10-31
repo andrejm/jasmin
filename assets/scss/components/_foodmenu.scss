@@ -1,0 +1,17 @@
+.foodmenu {
+	@include flex-grid-row();
+	justify-content: center;
+
+	&__inner {
+		@include flex-grid-column( 12, 0 );
+		padding-top: rem-calc( 20 );
+		padding-bottom: rem-calc( 40 );
+
+		@include breakpoint( medium ) {
+			@include flex-grid-column( 10 );
+			padding-top: rem-calc( 40 );
+			padding-bottom: rem-calc( 80 );
+
+		}
+	}
+}

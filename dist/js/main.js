@@ -298,15 +298,16 @@ jQuery(document).ready(function($) {
 
 	$('.js-menu-sections').responsiveTabs({
 		// all options: https://github.com/jellekralt/Responsive-Tabs
-	    startCollapsed: false,
+	    startCollapsed: 'accordion',
 	    scrollToAccordion: false,
 	    scrollToAccordionOnLoad: false,
 	    setHash: true,
 	    load: activateSlicks(),
 	    activate: function(event, tab){
+	    	// $(window).trigger('resize');
 	    	$('.js-menu-paging').slick('reinit');
 	    	$('.js-menu-pages').slick('reinit');
-	    	console.log('reinitialize');
+	    	// console.log('reinitialize');
 	    }
 	});
 	
@@ -320,7 +321,7 @@ jQuery(document).ready(function($) {
 			var target = $paginationSlider.data('for-slider');
 			var $targetSlider = $('#slider-' + target);
 
-			console.log( $targetSlider );
+			// console.log( $targetSlider );
 
 			$targetSlider.slick({
 				slidesToShow: 1,
@@ -332,15 +333,29 @@ jQuery(document).ready(function($) {
 			});
 
 			$paginationSlider.slick({
-				slidesToShow: 3,
+				slidesToShow: 2,
 				slidesToScroll: 1,
 				asNavFor: '#slider-' + target,
 				dots: false,
-				arrows: true,
-				centerMode: true,
+				arrows: false,
+				centerMode: false,
 				focusOnSelect: true,
 				mobileFirst : true,
 				responsive : [
+					{
+						breakpoint : 480,
+						settings : {
+							slidesToShow: 3,
+							centerMode: false,
+						}
+					},
+					{
+						breakpoint : 640, //medium breakpoint
+						settings : {
+							slidesToShow: 6,
+							centerMode: false,
+						}
+					},
 					{
 						breakpoint : 840,
 						settings : {
@@ -384,13 +399,32 @@ jQuery(document).ready(function($) {
 		// });
 	}
 });
+// jQuery(document).ready(function($) {
+	var map;
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: 48.1426607, lng: 17.103889},
+			zoom: 17,
+			scrollwheel: false,
+			draggable: !("ontouchend" in document)
+		});
+
+		var marker = new google.maps.Marker({
+			position: {lat: 48.1426607, lng: 17.103889},
+			map: map,
+			title: 'Jasmin restaurant'
+		});
+	}
+// });
+
 jQuery(document).ready(function($) {
 	// console.log($('.js-photogallery'));
 	$('.js-photogallery').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
-		arrows: false
+		arrows: false,
+		variableWidth: true
 	});
 });
 jQuery(document).ready(function($) {

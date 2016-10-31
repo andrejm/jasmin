@@ -5,9 +5,16 @@
 	padding-bottom: rem-calc(40);
 
 	&__lang {
-		@include flex-grid-column(2);
+		@include flex-grid-column(6);
+		display: flex;
+		margin-bottom: rem-calc( 24 );
+
+		@include breakpoint( medium ) {
+			@include flex-grid-column(2);
+		}
 
 		&--right {
+    		justify-content: flex-end;
 			@include breakpoint( medium ) {
 				order: 3;
 			}
@@ -15,10 +22,14 @@
 	}
 
 	&__address {
-		@include flex-grid-column(8);
+		@include flex-grid-column(12);
 		text-align: center;
 		color: $jasmin-gray;
 		font-size: rem-calc(18);
+
+		@include breakpoint( medium ) {
+			@include flex-grid-column(8);
+		}
 
 		a {
 			color: inherit;
