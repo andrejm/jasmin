@@ -2,30 +2,33 @@
 
 {% block page %}
 
-<section class="showcase">
-	<div class="showcase__logo">
-		<svg class="logo logo--center">
-		    <use xlink:href="dist/svg/svg.svg#logo-center" />
-		</svg>
-	</div>
+<section class="page">
+	<section class="showcase">
+		<div class="showcase__logo">
+			<svg class="logo logo--center">
+			    <use xlink:href="dist/svg/svg.svg#logo-center" />
+			</svg>
+		</div>
+	</section>
+	<section class="baseinfo">
+		<div class="baseinfo__inner">
+			<div class="baseinfo__lang baseinfo__lang--left">
+				<a href="{{ langswitch.left.link }}" class="langhref">{{ langswitch.left.title }}</a>
+			</div>
+			<div class="baseinfo__lang baseinfo__lang--right">
+				<a href="{{ langswitch.right.link }}" class="langhref langhref--right">{{ langswitch.right.title }}</a>
+			</div>
+			<div class="baseinfo__address">
+				<p>
+					{{ address.name }}, {{ address.open }} <br>
+					{{ address.contact }}, <a href="{{ address.map }}" target="_blank">{{ address.address }}</a>
+				</p>
+			</div>
+		</div>
+	</section>
 </section>
 
 <section id="{{ menu.about.id }}" class="js-section">
-	<section class="baseinfo">
-		<div class="baseinfo__lang baseinfo__lang--left">
-			<a href="{{ langswitch.left.link }}" class="langhref">{{ langswitch.left.title }}</a>
-		</div>
-		<div class="baseinfo__lang baseinfo__lang--right">
-			<a href="{{ langswitch.right.link }}" class="langhref langhref--right">{{ langswitch.right.title }}</a>
-		</div>
-		<div class="baseinfo__address">
-			<p>
-				{{ address.name }}, {{ address.open }} <br>
-				{{ address.contact }}, <a href="{{ address.map }}" target="_blank">{{ address.address }}</a>
-			</p>
-		</div>
-
-	</section>
 
 	<section class="moreinfo">
 		<div class="moreinfo__inner">

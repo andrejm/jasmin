@@ -1,8 +1,20 @@
 .baseinfo {
-	@include flex-grid-row();
 
 	padding-top: rem-calc(40);
 	padding-bottom: rem-calc(40);
+
+	@include breakpoint( medium ) {
+		position: absolute;
+		bottom: 0;
+		background: #fff;
+		left: 0;
+		right: 0;
+	}
+
+
+	&__inner {
+		@include flex-grid-row();
+	}
 
 	&__lang {
 		@include flex-grid-column(6);

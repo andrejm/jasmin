@@ -5193,6 +5193,21 @@ b {
 }
 
 .baseinfo {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .baseinfo {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    left: 0;
+    right: 0;
+  }
+}
+
+.baseinfo__inner {
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
@@ -5200,8 +5215,6 @@ b {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .baseinfo__lang {
@@ -5442,6 +5455,11 @@ b {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fefefe;
+  z-index: 1;
 }
 
 @media screen and (min-width: 40em) {
@@ -5458,12 +5476,7 @@ b {
 }
 
 .page-scrolled .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #fefefe;
   height: 5rem;
-  z-index: 1;
 }
 
 .header__logo {
@@ -5790,6 +5803,18 @@ b {
   }
 }
 
+@media screen and (min-width: 40em) {
+  .page {
+    min-height: 100vh;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+  }
+}
+
 .showcase {
   background: #fefefe url("../../images/bg-photo.jpg") no-repeat center;
   background-size: cover;
@@ -5798,6 +5823,12 @@ b {
 
 @media screen and (min-width: 40em) {
   .showcase {
+    position: absolute;
+    top: 7.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 60px;
     min-height: 32.5rem;
     display: -ms-flexbox;
     display: flex;
@@ -5805,9 +5836,6 @@ b {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-  }
-  .page-scrolled .showcase {
-    margin-top: 7.5rem;
   }
 }
 

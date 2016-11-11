@@ -7,17 +7,18 @@
 	justify-content: space-around;
 	height: $scrolled-header-height;
 
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: $white;
+	z-index: 1;
+	
 	@include breakpoint( medium ) {
 		height: $header-height;
 	}
 
 	.page-scrolled & {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		background: $white;
 		height: $scrolled-header-height;
-		z-index: 1;
 	}
 
 

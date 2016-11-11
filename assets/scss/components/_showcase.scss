@@ -4,7 +4,15 @@
 
 	min-height: rem-calc(260);
 
+
 	@include breakpoint( medium ) {
+		position: absolute;
+	    top: $header-height;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    padding-bottom: 60px;
+		
 		min-height: rem-calc(520);
 
 		display: flex;
@@ -12,7 +20,7 @@
 		align-items: center;
 		
 		.page-scrolled & {
-			margin-top: $header-height;
+			// margin-top: $header-height;
 		}
 	}
 

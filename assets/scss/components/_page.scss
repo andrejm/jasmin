@@ -1,0 +1,9 @@
+.page {
+
+	@include breakpoint( medium ) {
+		min-height: 100vh;
+		justify-content: space-between;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+}
