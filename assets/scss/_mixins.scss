@@ -35,7 +35,7 @@
 @mixin underline {
 	content: '';
 	display: block;
-	height: 2px;
+	height: 1px;
 	width: 0;
 	background: transparent;
 	transition: width .5s ease, background-color .5s ease;

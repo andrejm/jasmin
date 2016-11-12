@@ -4,6 +4,12 @@
 
 	&__inner {
 		@include flex-grid-row();
+
+		@include breakpoint( large ) {
+			max-width: none;
+			flex-flow: row nowrap;
+			align-content: stretch;
+		}
 	}
 
 	&__text,
@@ -11,17 +17,27 @@
 		@include flex-grid-column(12);
 
 		@include breakpoint( large ) {
-			@include flex-grid-column(6);
+			// @include flex-grid-column(6);
 		}
 	}
 
 	&__text {
 		padding-bottom: rem-calc( 35 );
+
+		@include breakpoint( large ) {
+			width: 33.3%;
+			flex: 0 0 33.3%;		
+			padding: rem-calc( 40 60 100 100 );
+		}
 	}
 
 	&__photo {
 		@include breakpoint( large ) {
 			@include half-fullwidth-section();
+
+			width: 66.6%;
+			flex: 0 0 66.6%;
+			left: 33.3%;
 		}
 	}
 }

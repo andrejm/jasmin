@@ -1,9 +1,16 @@
 .page {
 
-	@include breakpoint( medium ) {
+	@include breakpoint( large ) {
 		min-height: 100vh;
-		justify-content: space-between;
 		display: flex;
-		flex-flow: column nowrap;
+
+		&--layout-inside {
+			justify-content: space-between;
+			flex-flow: column nowrap;
+		}
+
+		&--color {
+			background-color: $jasmin-salmon;
+		}
 	}
 }

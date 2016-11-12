@@ -2,7 +2,7 @@
 
 {% block page %}
 
-<section class="page">
+<section class="page page--layout-inside">
 	<section class="showcase">
 		<div class="showcase__logo">
 			<svg class="logo logo--center">
@@ -28,7 +28,7 @@
 	</section>
 </section>
 
-<section id="{{ menu.about.id }}" class="js-section">
+<section id="{{ menu.about.id }}" class="page page--color js-section">
 
 	<section class="moreinfo">
 		<div class="moreinfo__inner">
@@ -41,10 +41,10 @@
 			<div class="moreinfo__photo">
 				<div class="photogallery js-photogallery">
 					<div>
-						<img src="images/photo-team.jpg" alt="Team of Jasmin restaurant">
+						<img src="images/luft-7-1600.jpg" alt="Team of Jasmin restaurant">
 					</div>
 					<div>
-						<img src="images/dummy.jpg" alt="Team of Jasmin restaurant">
+						<img src="images/luft-9-1600.jpg" alt="Team of Jasmin restaurant">
 					</div>
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 	</section>
 </section>
 
-<section id="{{ menu.menu.id }}" class="js-section js-section-trigger-menu foodmenu">
+<section id="{{ menu.menu.id }}" class="js-section js-section-trigger-menu foodmenu page">
 	<div class="foodmenu__inner">
 			{# https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion #}
 
@@ -69,7 +69,10 @@
 					<div id="pagination-{{ section.anchor }}" class="menu-paging js-menu-paging" data-for-slider="{{ section.anchor }}">
 						{% for part in section.parts %}
 						<div class="menu-paging__item">
-							<img src="images/{{ part.icon }}" alt="" class="menu-paging__icon">
+							{# <img src="images/{{ part.icon }}" alt="" class="menu-paging__icon"> #}
+							<svg class="menu-paging__icon">
+							    <use xlink:href="dist/svg/svg.svg#{{ part.icon }}" />
+							</svg>
 							<span class="menu-paging__label">{{ part.title }}</span>
 						</div>
 						{% endfor %}

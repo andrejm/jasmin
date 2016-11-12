@@ -1,7 +1,7 @@
 .baseinfo {
 
-	padding-top: rem-calc(40);
-	padding-bottom: rem-calc(40);
+	padding-top: rem-calc(25);
+	padding-bottom: rem-calc(25);
 
 	@include breakpoint( medium ) {
 		position: absolute;
