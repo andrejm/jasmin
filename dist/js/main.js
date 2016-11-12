@@ -358,15 +358,17 @@ jQuery(document).ready(function($) {
 					{
 						breakpoint : 640, //medium breakpoint
 						settings : {
-							slidesToShow: 6,
+							slidesToShow: 4,
 							centerMode: false,
 						}
 					},
 					{
 						breakpoint : 840,
 						settings : {
-							slidesToShow: 14,
+							slidesToShow: 9,
 							centerMode: false,
+							variableWidth: true
+
 						}
 					}
 				]

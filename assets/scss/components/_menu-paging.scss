@@ -3,7 +3,7 @@
 		cursor: pointer;
 
 		@include breakpoint( medium ) {
-			max-width: 60px;
+			// max-width: rem-calc( 100 );
 		}
 	}
 
@@ -15,15 +15,24 @@
 		}
 
 		.slick-current & {
-			border: 1px solid rgba( 255, 255, 255, 0.3);
+			// border: 1px solid rgba( 255, 255, 255, 0.3);
 		}
 	}
 
 	&__icon {
 		display: none !important;
+		fill: #484848;
+
+		.slick-current & {
+			fill: $primary-color;
+			color: $primary-color;
+		}
 
 		@include breakpoint( medium ) {
 			display: block !important;
+			width: rem-calc( 100 );
+			height: rem-calc( 100 );
 		}
 	}
+
 }

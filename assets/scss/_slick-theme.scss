@@ -109,6 +109,10 @@ $slick-opacity-not-active: 0.25 !default;
         opacity: $slick-opacity-default;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+
+        @include breakpoint( medium ) {
+            color: #484848;
+        }
     }
 }
 
@@ -205,8 +209,3 @@ $slick-opacity-not-active: 0.25 !default;
         }
     }
 }
-
-.menu-paging .slick-current {
-    border: 1px solid $jasmin-red;
-}
-
