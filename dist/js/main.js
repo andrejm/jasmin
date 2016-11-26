@@ -324,6 +324,7 @@ jQuery(document).ready(function($) {
 			var $targetSlider = $('#slider-' + target);
 
 			// console.log( $targetSlider );
+			// console.log($paginationSlider);
 
 			$targetSlider.slick({
 				slidesToShow: 1,
@@ -365,10 +366,11 @@ jQuery(document).ready(function($) {
 					{
 						breakpoint : 840,
 						settings : {
-							slidesToShow: 9,
+							//bad, but working version: centermode false, slidesToShow 9, arrows false
+							//when arrows true, there are two arrows (button elements) generated in slick track and they are considered slides and they desynchronize synced sliders
 							centerMode: false,
-							variableWidth: true
-
+							slidesToShow: 9,
+							arrows: false,
 						}
 					}
 				]

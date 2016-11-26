@@ -280,19 +280,12 @@
 						{ "no" : "956", "name" : "Kokosové guličky, 150 g", "price" : "4.50" },
 						{ "no" : "957", "name" : "Horúca čokoládová tortička s vanilkovou zmrzlinou, 150 g", "price" : "4.50" }
 					]
-				}
-			}
-		},
-		"section_lunch_menu" : {
-			"title" : "Obedové menu",
-			"anchor" : "obedove-menu",
-			"parts" : {
+				},
 				"part_oneperson" : {
 					"title" : "Menu pre 1 osobu",
-					"icon" : "polievka",
+					"icon" : "menu_pre_1_osobu",
 					"meals" : [
-						{ "no" : "B1", "name" : "Polievka podľa vlastného výberu:", "price" : "10.90" },
-						{ "no" : "", "name" : "Ostrokyslá alebo Kuracia polievka, 0.25 l", "price" : "" },
+						{ "no" : "B1", "name" : "Polievka (Ostrokyslá alebo kuracia, 0.25 l)", "price" : "10.90" },
 						{ "no" : "", "name" : "Chrumkavá kačica, 100 g", "price" : "" },
 						{ "no" : "", "name" : "Kuracie sladkokyslé, 100 g", "price" : "" },
 						{ "no" : "", "name" : "Jasmínová ryža, 100 g", "price" : "" },
@@ -301,10 +294,9 @@
 				},
 				"part_twoperson" : {
 					"title" : "Menu pre 2 osoby",
-					"icon" : "polievka",
+					"icon" : "menu_pre_2_osoby",
 					"meals" : [
-						{ "no" : "B2", "name" : "Polievka podľa vlastného výberu:", "price" : "22.90" },
-						{ "no" : "", "name" : "Ostrokyslá alebo Kuracia polievka, 0.25 l", "price" : "" },
+						{ "no" : "B2", "name" : "Polievka (Ostrokyslá alebo kuracia, 0.25 l)", "price" : "22.90" },
 						{ "no" : "", "name" : "Miešaný šalát, 120 g", "price" : "" },
 						{ "no" : "", "name" : "Kuracie s bambusovými výhonkami a hubami, 100 g", "price" : "" },
 						{ "no" : "", "name" : "Chrumkavá kačica, 100 g", "price" : "" },
@@ -316,10 +308,9 @@
 				},
 				"part_fourperson" : {
 					"title" : "Menu pre 4 osoby",
-					"icon" : "polievka",
+					"icon" : "menu_pre_4_osoby",
 					"meals" : [
-						{ "no" : "B3", "name" : "Polievka podľa vlastného výberu:", "price" : "39.90" },
-						{ "no" : "", "name" : "Ostrokyslá alebo Kuracia polievka, 0.25 l", "price" : "" },
+						{ "no" : "B3", "name" : "Polievka (Ostrokyslá alebo kuracia, 0.25 l)", "price" : "39.90" },
 						{ "no" : "", "name" : "Miešaný šalát, 120 g", "price" : "" },
 						{ "no" : "", "name" : "Bravčové s bambusovými výhonkami a hubami, 100 g", "price" : "" },
 						{ "no" : "", "name" : "Kuracie “Gongbao”, 100 g", "price" : "" },
@@ -331,6 +322,34 @@
 						{ "no" : "", "name" : "Dezert – čerstvé ovocie", "price" : "" }
 					]
 				}
+			}
+		},
+		"section_lunch_menu" : {
+			"title" : "Denné menu",
+			"anchor" : "denne-menu",
+			"parts" : {
+				"part_fourperson" : {
+					"title" : "Denné menu, po—pia 11:00—16:00",
+					"icon" : "polievka",
+					"meals" : [
+						{ "no" : "D1", "name" : "Budhistické pôstne jedlo, ryža", "price" : "4.50" },
+						{ "no" : "D2", "name" : "Pražená ryža s kuracím mäsom", "price" : "4.50" },
+						{ "no" : "D3", "name" : "Pražené ryžové rezance s kuracím mäsom", "price" : "4.50" },
+						{ "no" : "D4", "name" : "Pražené rezance Udon s hovädzím mäsom", "price" : "5.50" },
+						{ "no" : "D5", "name" : "Zelenina s kari a vajcom, ryža", "price" : "5.50" },
+						{ "no" : "D6", "name" : "Kuracie mäso Gongbao, ryža", "price" : "5.50" },
+						{ "no" : "D7", "name" : "Kuracie so zeleninou a teriyaki omáčkou, ryža", "price" : "5.50" },
+						{ "no" : "D8", "name" : "Bravčové sladkokyslé", "price" : "5.50" },
+						{ "no" : "D9", "name" : "Hovädzie so zeleninou a teriyaki omáčkou, ryža", "price" : "6.50" },
+						{ "no" : "D10", "name" : "Hovädzie s pórom a feferónkami, ryža", "price" : "6.50" },
+						{ "no" : "D11", "name" : "Chrumkavá kačica, ryža", "price" : "6.50" },
+						{ "no" : "D12", "name" : "Zeleninový závitok, grilovaná zelenina, ryžové rezance", "price" : "6.50" },
+						{ "no" : "D13", "name" : "Vyprážané krevety 3 ks, grilovaný rybí filet, pražená brokolica", "price" : "7.90" },
+						{ "no" : "S1", "name" : "Vegetariánsky sushi maki tanier, 12 ks", "price" : "6.00" },
+						{ "no" : "S2", "name" : "Lososový nigiri tanier, 8 ks", "price" : "7.90" },
+						{ "no" : "S3", "name" : "Miešaný sushi tanier, 11 ks", "price" : "7.90" }
+					]
+				}				
 			}
 		},
 		"section_wines" : {

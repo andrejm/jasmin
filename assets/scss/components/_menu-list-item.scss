@@ -45,6 +45,10 @@
 			&::after {
 				content: '';
 			}
+
+			&--empty {
+				margin-right: 0;
+			}
 		}
 	}
 

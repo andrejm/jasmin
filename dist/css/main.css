@@ -5612,6 +5612,9 @@ b {
   .menu-list-item__number::after {
     content: '';
   }
+  .menu-list-item__number--empty {
+    margin-right: 0;
+  }
 }
 
 .menu-list-item__price {
