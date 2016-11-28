@@ -11,10 +11,10 @@
         <!-- Place favicon.ico in the root directory -->
 
         {# <link rel="stylesheet" href="css/normalize.css"> #}
-        <link rel="stylesheet" href="dist/css/main.css?ver=20161032">
+        <link rel="stylesheet" href="dist/css/main.css?ver=20161128">
         {# <script src="js/vendor/modernizr-2.8.3.min.js"></script> #}
     </head>
-    <body class="">
+    <body class="" id="top">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -24,6 +24,13 @@
                 <use xlink:href="dist/svg/svg.svg#logo-small" />
             </svg>
             <ul class="header__menu main-menu js-main-menu">
+                    <li class="main-menu__item main-menu__item--home" data-section="top">
+                        <a href="#top">
+                            <svg class="main-menu__logo">
+                                <use xlink:href="dist/svg/svg.svg#krizik_sam" />
+                            </svg>
+                        </a>
+                    </li>
                 {% for item in menu %}
                     <li class="main-menu__item" data-section="{{ item.id }}"><a href="#{{ item.id }}">{{ item.title }}</a></li>
                 {% endfor %}
@@ -35,7 +42,7 @@
         <script src="dist/js/jquery.min.js"></script>
         <!-- <script src="dist/js/svg4everybody.min.js"></script> -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_I9L-p4P3OZk74RMJoLjlcWtHTv9SNQQ&callback=initMap" async defer></script>
-        <script src="dist/js/main.js?ver=20161032"></script>
+        <script src="dist/js/main.js?ver=20161128"></script>
 
     </body>
 </html>

@@ -2,19 +2,26 @@
 	@include reset-list();
 	width: auto;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	font-size: rem-calc( 14 );
+	font-size: rem-calc( 16 );
+	width: 100%;
 
 	@include breakpoint( medium ) {
 		font-size: rem-calc( 18 );
+		justify-content: center;
+		width: auto;
 	}
 
 	&__item {
 		text-decoration: none;
 		display: inline-block;
 		padding: rem-calc( 8 4 );
-		margin: rem-calc( 0 20 );
+		margin: 0;
+
+		@include breakpoint( medium ) {
+			margin: rem-calc( 0 20 );			
+		}
 
 		&::after {
 			@include underline();
@@ -23,6 +30,18 @@
 		&--active::after {
 			@include underline-hover( $primary-color )
 		}
+
+		&--home {
+			@include breakpoint( medium ) {
+				display: none;
+			}
+		}
+	}
+
+	&__logo {
+		display: block;
+		width: rem-calc( 30 );
+		height: rem-calc( 30 );
 	}
 
 	a {

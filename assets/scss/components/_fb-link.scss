@@ -1,0 +1,7 @@
+.fb-link {
+	display: block;
+
+	@include breakpoint( medium ) {
+		display: inline;
+	}
+}

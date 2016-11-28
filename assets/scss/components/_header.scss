@@ -5,7 +5,7 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
-	height: $scrolled-header-height;
+	height: $mobile-header-height;
 
 	position: fixed;
 	top: 0;
@@ -18,7 +18,9 @@
 	}
 
 	.page-scrolled & {
-		height: $scrolled-header-height;
+		@include breakpoint( medium ) {
+			height: $scrolled-header-height;
+		}
 	}
 
 

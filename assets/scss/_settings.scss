@@ -64,6 +64,7 @@ $white: #fefefe;
 $jasmin-red: #a82d53;
 $jasmin-gray: #343434;
 $jasmin-salmon: #ecdccc;
+$mobile-header-height: rem-calc( 50 );
 $header-height: rem-calc( 120 ); //careful, we use this also in javascript files for scrolling and scrollspy purposes
 $scrolled-header-height: rem-calc( 80 );
 

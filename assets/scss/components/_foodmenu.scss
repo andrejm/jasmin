@@ -6,12 +6,15 @@
 		@include flex-grid-column( 12, 0 );
 		padding-top: rem-calc( 20 );
 		padding-bottom: rem-calc( 40 );
+		display: flex;
+	    flex-flow: column nowrap;
+	    justify-content: center;
 
 		@include breakpoint( medium ) {
 			@include flex-grid-column( 10 );
 			padding-top: rem-calc( 40 );
 			padding-bottom: rem-calc( 80 );
-
+			justify-content: initial;
 		}
 	}
 }

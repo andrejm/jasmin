@@ -11,4 +11,12 @@
 		left: -5px;
 		top: -5px;
 	}
+
+	&--small {
+		height: rem-calc( 30 );
+
+		@include breakpoint( medium ) {
+			display: none;
+		}
+	}
 }

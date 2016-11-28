@@ -1,6 +1,16 @@
 .menu-paging {
+	margin-bottom: rem-calc( 16 );
+
+	@include breakpoint( medium ) {
+		margin-bottom: 0;
+	}
+
 	&__item {
 		cursor: pointer;
+
+		&.slick-current {
+			border-bottom: 1px solid $white;
+		}
 
 		@include breakpoint( medium ) {
 			// max-width: rem-calc( 100 );

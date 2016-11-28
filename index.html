@@ -11,10 +11,10 @@
         <!-- Place favicon.ico in the root directory -->
 
         
-        <link rel="stylesheet" href="dist/css/main.css?ver=20161032">
+        <link rel="stylesheet" href="dist/css/main.css?ver=20161128">
         
     </head>
-    <body class="">
+    <body class="" id="top">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -24,6 +24,13 @@
                 <use xlink:href="dist/svg/svg.svg#logo-small" />
             </svg>
             <ul class="header__menu main-menu js-main-menu">
+                    <li class="main-menu__item main-menu__item--home" data-section="top">
+                        <a href="#top">
+                            <svg class="main-menu__logo">
+                                <use xlink:href="dist/svg/svg.svg#krizik_sam" />
+                            </svg>
+                        </a>
+                    </li>
                 
                     <li class="main-menu__item" data-section="about"><a href="#about">O reštaurácii</a></li>
                 
@@ -53,9 +60,15 @@
 				<a href="chinese.html" class="langhref langhref--right">Chinese</a>
 			</div>
 			<div class="baseinfo__address">
+				<svg class="logo logo--small">
+				    <use xlink:href="dist/svg/svg.svg#logo-small" />
+				</svg>
+
 				<p>
 					Čínska reštaurácia Jasmin, Otvorené denne: 11:00&nbsp;—&nbsp;23:00 <br>
 					Kontakt: + 421&nbsp;2&nbsp;54&nbsp;41&nbsp;51&nbsp;82, <a href="https://www.google.com/maps/place/%C5%BDidovsk%C3%A1+4716%2F7,+811+01+Bratislava,+Slovakia/@48.1426643,17.1017221,17z/data=!3m1!4b1!4m5!3m4!1s0x476c895d71a02ee1:0x3784ec9c30a7dfb0!8m2!3d48.1426607!4d17.1039108" target="_blank">Židovská&nbsp;7, 811&nbsp;01 Bratislava</a>
+					<a href="http://facebook.com" class="fb-link" title="Jasmin facebook" target="_blank"><img src="images/facebook.png" alt=""></a>
+					<a href="http://facebook.com" class="fb-link" title="Jasmin facebook" target="_blank"><img src="images/chinese-facebook.png" alt=""></a>
 				</p>
 			</div>
 		</div>
@@ -3976,7 +3989,7 @@
         <script src="dist/js/jquery.min.js"></script>
         <!-- <script src="dist/js/svg4everybody.min.js"></script> -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_I9L-p4P3OZk74RMJoLjlcWtHTv9SNQQ&callback=initMap" async defer></script>
-        <script src="dist/js/main.js?ver=20161032"></script>
+        <script src="dist/js/main.js?ver=20161128"></script>
 
     </body>
 </html>

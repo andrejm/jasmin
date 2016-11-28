@@ -35,6 +35,7 @@
 
     .r-tabs .r-tabs-accordion-title {
         display: block;
+        text-align: center;
     }
 }
 
@@ -93,6 +94,11 @@
                 display: none;
             }
         }
+    }
+
+    & .r-tabs-state-active .r-tabs-anchor:before {
+        background-image: url('../../images/arrow-down-white.svg');
+        margin-right: rem-calc( 10 );
     }
 
     @include breakpoint( medium ) {
