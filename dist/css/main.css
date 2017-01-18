@@ -5371,6 +5371,10 @@ b {
   }
 }
 
+.foodmenu .slick-list {
+  overflow: hidden;
+}
+
 .footer {
   background-color: #ecdccc;
   position: relative;
@@ -5711,7 +5715,8 @@ b {
 @media screen and (min-width: 40em) {
   .menu-pages__title {
     color: #a82d53;
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.25rem;
   }
 }
 
@@ -5727,6 +5732,13 @@ b {
 
 .menu-paging__item {
   cursor: pointer;
+}
+
+.menu-paging__item.slick-slide {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .menu-paging__item.slick-current {
@@ -5760,6 +5772,36 @@ b {
     width: 6.25rem;
     height: 6.25rem;
   }
+}
+
+@media screen and (min-width: 40em) {
+  .menu-paging .slick-list {
+    margin: 0 4.375rem;
+  }
+}
+
+.menu-paging .slick-prev {
+  left: 0;
+}
+
+.menu-paging .slick-prev:before {
+  content: url("../../images/arrow-left.svg");
+}
+
+[dir="rtl"] .menu-paging .slick-prev:before {
+  content: url("../../images/arrow-right.svg");
+}
+
+.menu-paging .slick-next {
+  right: 0;
+}
+
+.menu-paging .slick-next:before {
+  content: url("../../images/arrow-right.svg");
+}
+
+[dir="rtl"] .menu-paging .slick-next:before {
+  content: url("../../images/arrow-left.svg");
 }
 
 .main-menu {

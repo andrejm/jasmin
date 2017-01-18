@@ -9,7 +9,8 @@
 
 		@include breakpoint( medium ) {
 			color: $primary-color;
-			margin-bottom: rem-calc( 50 );
+			margin-bottom: rem-calc( 40 );
+			margin-top: rem-calc( 20 );
 		}
 	}
 }

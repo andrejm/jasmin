@@ -8,6 +8,11 @@
 	&__item {
 		cursor: pointer;
 
+		&.slick-slide {
+			display: flex;
+			justify-content: center;
+		}
+
 		&.slick-current {
 			border-bottom: 1px solid $white;
 		}
@@ -43,6 +48,39 @@
 			display: block !important;
 			width: rem-calc( 100 );
 			height: rem-calc( 100 );
+		}
+	}
+
+	.slick-list {
+		@include breakpoint( medium ) {
+			margin: rem-calc( 0 70 );
+		}
+	}
+
+	.slick-prev {
+		left: 0;
+
+		&:before {
+		    //content: $slick-prev-character;
+		    content: url('../../images/arrow-left.svg');
+		    [dir="rtl"] & {
+		        //content: $slick-next-character;
+		        content: url('../../images/arrow-right.svg');
+		    }
+		}
+
+	}
+
+	.slick-next {
+		right: 0;
+
+		&:before {
+		    //content: $slick-next-character;
+		    content: url('../../images/arrow-right.svg');
+		    [dir="rtl"] & {
+		        //content: $slick-prev-character;
+		        content: url('../../images/arrow-left.svg');
+		    }
 		}
 	}
 
