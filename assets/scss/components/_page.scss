@@ -12,5 +12,11 @@
 		&--color {
 			background-color: $jasmin-salmon;
 		}
+
+		&--about {
+			height: calc(100vh - #{$scrolled-header-height});
+			min-height: initial;
+			// height: calc(100vh - 80px);
+		}
 	}
 }

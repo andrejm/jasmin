@@ -154,8 +154,8 @@ gulp.task('concat', function() {
     // .pipe(uglify({
     //     outSourceMap: true
     // }))
+    // .pipe(babel())
     .pipe(gulp.dest(paths.dest + 'js'))
-    .pipe(babel())
     .pipe(browserSync.stream());
 });
 

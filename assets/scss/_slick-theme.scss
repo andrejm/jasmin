@@ -15,6 +15,8 @@ $slick-dot-color-active: $primary-color;
 // "\2192" outputs ascii character "→"
 // "\2022" outputs ascii character "•"
 
+$slick-font-family: "none";
+
 $slick-font-path: "./fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
@@ -69,7 +71,7 @@ $slick-opacity-not-active: 0.25 !default;
 /* Arrows */
 
 .slick-slider {
-    margin: rem-calc( 0 10 );
+    margin: rem-calc( 0 10 0 0 );
 }
 
 .slick-prev,

@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
 			{
 				breakpoint : 1024,
 				settings : {
-					variableWidth: true,
+					variableWidth: false,
 				}
 			}
 		]
