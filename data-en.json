@@ -82,6 +82,8 @@
 		"section_main_menu" : {
 			"title" : "Menu",
 			"anchor" : "our-menu",
+			"pdf" : "Menu 2016 EN.pdf",
+			"pdf_title" : "Download as PDF",
 			"parts" : {
 				"part_soup" : {
 					"title" : "Soups",
@@ -327,6 +329,8 @@
 		"section_lunch_menu" : {
 			"title" : "Lunch menu",
 			"anchor" : "lunch-menu",
+			"pdf" : "Denne 2016 EN.pdf",
+			"pdf_title" : "Download as PDF",
 			"parts" : {
 				"part_daily_special" : {
 					"title" : "Daily special, Mo—Fri 11am—4pm",
@@ -356,6 +360,8 @@
 		"section_wines" : {
 			"title" : "Wines",
 			"anchor" : "wines",
+			"pdf" : "Vinny 2016 EN.pdf",
+			"pdf_title" : "Download as PDF",
 			"parts" : {
 				"part_liquers" : {
 					"title" : "Liquors and spirits",
@@ -452,6 +458,8 @@
 		"section_drink" : {
 			"title" : "Beverages",
 			"anchor" : "beverages",
+			"pdf" : "Napojovy 2016 SK.pdf",
+			"pdf_title" : "Download as PDF",
 			"parts" : {
 				"part_beer" : {
 					"title" : "Beer",

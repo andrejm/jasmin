@@ -29,8 +29,6 @@ jQuery(document).ready(function($) {
 		$slickPaginations.each( function( index, element ) {
 			activateSlick(element);
 		});
-
-		return true;
 	}
 
 	function activateSlick(element) {
@@ -55,6 +53,7 @@ jQuery(document).ready(function($) {
 			focusOnSelect: true,
 			arrows: true
 		};
+
 
 		$targetSlider.slick( targetSliderOptions );
 

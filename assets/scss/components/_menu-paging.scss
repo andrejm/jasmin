@@ -1,7 +1,9 @@
 .menu-paging {
+	display:none;
 	margin-bottom: rem-calc( 16 );
 
 	@include breakpoint( medium ) {
+		display: block;
 		margin-bottom: 0;
 	}
 

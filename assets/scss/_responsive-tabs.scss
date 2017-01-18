@@ -72,28 +72,27 @@
         text-decoration: none;
         // text-shadow: 0 1px rgba(0, 0, 0, 0.4);
         font-size: rem-calc( 18 );
-        font-weight: bold;
         color: $jasmin-gray;
 
         &:after {
             @include underline;
         }
 
-        &::before {
-            content: '';
-            background: transparent url( '../../images/arrow-right.svg') no-repeat center center;
-            background-size: contain;
-            display: inline-block;
-            width: 25px;
-            height: 20px;
-            position: relative;
-            top: 1px;
+        // &::before {
+        //     content: '';
+        //     background: transparent url( '../../images/arrow-right.svg') no-repeat center center;
+        //     background-size: contain;
+        //     display: inline-block;
+        //     width: 25px;
+        //     height: 20px;
+        //     position: relative;
+        //     top: 1px;
 
 
-            @include breakpoint( medium ) {
-                display: none;
-            }
-        }
+        //     @include breakpoint( medium ) {
+        //         display: none;
+        //     }
+        // }
     }
 
     & .r-tabs-state-active .r-tabs-anchor:before {

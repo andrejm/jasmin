@@ -13,3 +13,9 @@
 	min-height: 400px;
 	width: 100%;
 }
+
+.u-mobile-only {
+    @include breakpoint( medium ) {
+        display: none;
+    }
+}

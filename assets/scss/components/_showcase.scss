@@ -1,8 +1,8 @@
 .showcase {
-	background: $white url('../../images/bg-photo.jpg') no-repeat center;
-	background-size: cover;
+	// background: $white url('../../images/bg-photo.jpg') no-repeat center;
+	// background-size: cover;
 
-	min-height: rem-calc(260);
+	height: rem-calc(260);
 
 
 	@include breakpoint( medium ) {
@@ -14,10 +14,11 @@
 	    padding-bottom: 120px; //TODO resolve centering of logo in other way
 		
 		min-height: rem-calc(520);
+		height: auto;
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
 		
 		.page-scrolled & {
 			// margin-top: $header-height;
@@ -32,10 +33,14 @@
 			width: rem-calc(255);
 			height: rem-calc(255);
 			background-color: $white;
-			transform: rotate(45deg);
+			transform: translateY(-75%) translateX(-50%) rotate(45deg);
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
 		}
 
 	}

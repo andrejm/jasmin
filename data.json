@@ -82,6 +82,8 @@
 		"section_main_menu" : {
 			"title" : "Jedálny lístok",
 			"anchor" : "jedalny-listok",
+			"pdf" : "Menu 2016 SK.pdf",
+			"pdf_title" : "Stiahnuť v PDF",
 			"parts" : {
 				"part_soup" : {
 					"title" : "Polievky",
@@ -327,6 +329,8 @@
 		"section_lunch_menu" : {
 			"title" : "Denné menu",
 			"anchor" : "denne-menu",
+			"pdf" : "Denne 2016 SK.pdf",
+			"pdf_title" : "Stiahnuť v PDF",
 			"parts" : {
 				"part_fourperson" : {
 					"title" : "Denné menu, po—pia 11:00—16:00",
@@ -355,6 +359,8 @@
 		"section_wines" : {
 			"title" : "Vínny lístok",
 			"anchor" : "vinny-listok",
+			"pdf" : "Vinny 2016 SK.pdf",
+			"pdf_title" : "Stiahnuť v PDF",
 			"parts" : {
 				"part_liquers" : {
 					"title" : "Likéry, pálenky a aperitívy",
@@ -451,6 +457,8 @@
 		"section_drink" : {
 			"title" : "Nápojový lístok",
 			"anchor" : "napojovy-listok",
+			"pdf" : "Napojovy 2016 SK.pdf",
+			"pdf_title" : "Stiahnuť v PDF",
 			"parts" : {
 				"part_beer" : {
 					"title" : "Pivo",

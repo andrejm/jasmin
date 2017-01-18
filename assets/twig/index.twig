@@ -4,6 +4,10 @@
 
 <section class="page page--layout-inside">
 	<section class="showcase">
+		<div class="main-banner js-main-banner">
+			<div style="background-image:url('/images/bg-photo.jpg');" class="main-banner__slide"></div>
+			<div style="background-image:url('/images/bg-photo.jpg');" class="main-banner__slide"></div>
+		</div>
 		<div class="showcase__logo">
 			<svg class="logo logo--center">
 			    <use xlink:href="dist/svg/svg.svg#logo-center" />
@@ -26,6 +30,7 @@
 				<p>
 					{{ address.name }}, {{ address.open }} <br>
 					{{ address.contact }}, <a href="{{ address.map }}" target="_blank">{{ address.address }}</a>
+					<br class="u-mobile-only">
 					<a href="http://facebook.com" class="fb-link" title="Jasmin facebook" target="_blank"><img src="images/facebook.png" alt=""></a>
 					<a href="http://facebook.com" class="fb-link" title="Jasmin facebook" target="_blank"><img src="images/chinese-facebook.png" alt=""></a>
 				</p>
@@ -69,6 +74,8 @@
 
 			{% for section in foodmenu %}
 				<div id="{{ section.anchor }}" class="menu-sections__section">
+
+					<a href="/menus/{{ section.pdf }}" class="menu-sections__foodmenu-link">{{ section.pdf_title }}</a>
 
 					<div id="pagination-{{ section.anchor }}" class="menu-paging js-menu-paging" data-for-slider="{{ section.anchor }}">
 						{% for part in section.parts %}

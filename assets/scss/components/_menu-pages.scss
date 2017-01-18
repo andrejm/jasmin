@@ -1,4 +1,10 @@
 .menu-pages {
+	display: none;
+
+	@include breakpoint( medium ) {
+		display: block;
+	}
+
 	&__title {
 		font-size: rem-calc( 18 );
 		color: $white;
