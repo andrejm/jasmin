@@ -3,5 +3,9 @@
 		display: block;
 		text-align: center;
 		color: $white;
+
+		@include breakpoint( medium ) {
+			display: none;
+		}
 	}
 }

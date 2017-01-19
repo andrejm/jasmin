@@ -24,12 +24,13 @@
 
 	&__text {
 		padding-bottom: rem-calc( 35 );
+		position: relative;
 
 		@include breakpoint( large ) {
 			width: 33.3%;
 			flex: 0 0 33.3%;		
 			padding: rem-calc( 20 30 50 50 );			
-			overflow-y: scroll;
+			overflow-y: auto;
 		}
 
 		@include breakpoint( xlarge ) {

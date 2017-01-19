@@ -41,6 +41,7 @@ var paths = {
         // 'assets/js/easyResponsiveTabs.js', //https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion
         'assets/js/jquery.responsiveTabs.min.js', // git@github.com:jellekralt/Responsive-Tabs.git
         'bower_components/slick-carousel/slick/slick.min.js',
+        'bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js',
         'assets/js/components/*.js',
         'assets/js/main.js'
         ],

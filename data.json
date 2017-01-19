@@ -334,7 +334,7 @@
 			"parts" : {
 				"part_fourperson" : {
 					"title" : "Denné menu, po—pia 11:00—16:00",
-					"icon" : "polievka",
+					"icon" : "",
 					"meals" : [
 						{ "no" : "D1", "name" : "Budhistické pôstne jedlo, ryža", "price" : "4.50" },
 						{ "no" : "D2", "name" : "Pražená ryža s kuracím mäsom", "price" : "4.50" },
