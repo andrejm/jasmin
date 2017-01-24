@@ -1,17 +1,35 @@
-@font-face {
-    font-family: 'Idealista';
-    src: url('../fonts/idealista_semibold-webfont.woff2') format('woff2'),
-         url('../fonts/idealista_semibold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+// @font-face {
+//     font-family: 'Idealista';
+//     src: url('../fonts/idealista_semibold-webfont.woff2') format('woff2'),
+//          url('../fonts/idealista_semibold-webfont.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Idealista';
+//     src: url('../fonts/idealista_medium-webfont.woff2') format('woff2'),
+//          url('../fonts/idealista_medium-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face
+{
+  font-family: "Idealista-Medium";
+  src: url("../fonts/Idealista-Medium-dcf32c23d7697ad5fba6cb5d53f9c7ca.eot");
+  src: url("../fonts/Idealista-Medium-dcf32c23d7697ad5fba6cb5d53f9c7ca.eot?#iefix") format("embedded-opentype"), url("../fonts/Idealista-Medium-dcf32c23d7697ad5fba6cb5d53f9c7ca.woff2") format("woff2"), url("../fonts/Idealista-Medium-dcf32c23d7697ad5fba6cb5d53f9c7ca.woff") format("woff"), url("../fonts/Idealista-Medium-dcf32c23d7697ad5fba6cb5d53f9c7ca.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: 'Idealista';
-    src: url('../fonts/idealista_medium-webfont.woff2') format('woff2'),
-         url('../fonts/idealista_medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face
+{
+  font-family: "Idealista-SemiBold";
+  src: url("../fonts/Idealista-SemiBold-12fc57d2426bda80b37ec2d5ad898a24.eot");
+  src: url("../fonts/Idealista-SemiBold-12fc57d2426bda80b37ec2d5ad898a24.eot?#iefix") format("embedded-opentype"), url("../fonts/Idealista-SemiBold-12fc57d2426bda80b37ec2d5ad898a24.woff2") format("woff2"), url("../fonts/Idealista-SemiBold-12fc57d2426bda80b37ec2d5ad898a24.woff") format("woff"), url("../fonts/Idealista-SemiBold-12fc57d2426bda80b37ec2d5ad898a24.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*
