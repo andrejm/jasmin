@@ -1,0 +1,512 @@
+{
+	"title" : "城寶山莊",
+	
+	"menu" : {
+		"about" : {
+			"title" : "主页",
+			"id" : "about"
+		},
+		"menu" : {
+			"title" : "关于团餐",
+			"id" : "menu"
+		},
+		"contact" : {
+			"title" : "联系我们",
+			"id" : "contact"
+		}
+	},
+
+	"langswitch" : {
+		"left" : {
+			"title" : "English",
+			"link" : "english.html"
+		},
+		"right" : {
+			"title" : "Slovensky",
+			"link" : "index.html"
+		}
+	},
+
+	"address" : {
+		"name" : "城寶山莊",
+		"open" : "城堡, 每日營業時間: 11:00&nbsp;—&nbsp;23:00",
+		"contact" : "联系我们: + 421&nbsp;2&nbsp;54&nbsp;41&nbsp;51&nbsp;82",
+		"address" : "Židovská&nbsp;7, 811&nbsp;01 Bratislava",
+		"map" : "https://www.google.com/maps/place/%C5%BDidovsk%C3%A1+4716%2F7,+811+01+Bratislava,+Slovakia/@48.1426643,17.1017221,17z/data=!3m1!4b1!4m5!3m4!1s0x476c895d71a02ee1:0x3784ec9c30a7dfb0!8m2!3d48.1426607!4d17.1039108"
+	},
+
+	"aboutpage" : {
+		"title" : "主页",
+		"desc" : [
+			"城寶山莊 城寶山莊始建於1996年,是斯洛伐克歷史最悠久和最著名的中國飯店之一. 它位於首都布拉迪斯拉发市中心;面對聖馬丁大教堂,背倚著名的古城堡,藍色的多瑙河在不遠處靜靜地流過,地理位置非常優越.",
+			"我們飯店有近80 個座位,夏天有美麗的花園,並為客人備有停車位.飯店的廚師全部來自于中國的星級酒店,有著豐富的工作經驗.我們廚師提供的菜品都是正宗的中國菜和不同風味的亞洲菜.同時我們也提供不同檔次的團隊餐,與數個國際性的旅行社都有著穩定的業務關係.",
+			"我們把為客人提供最優質的菜品和服務作為立店的宗旨, 歡迎各位光臨本店."
+		],
+		"slides" : [
+			"images/slide_01.jpg",
+			"images/slide_02.jpg",
+			"images/slide_03.jpg"
+		]
+	},
+
+	"kontaktpage" : {
+		"title" : "联系我们",
+		"sections" : {
+			"address" : {
+				"title" : "飯店地址",
+				"lines" : [
+					"城寶山莊",
+					"飯店地址:",
+					"Židovská 7",
+					"811 01 Bratislava, Slovakia",
+					"布拉迪斯拉发 斯洛伐克"
+				]
+			},
+			"contact" : {
+				"title" : "联系",
+				"lines" : [
+					"聯繫電話: 00421 2 54415182",
+					"傳真: 00421 2 54415182",
+					"電子信箱: jasmin.1@hotmail.com"
+				]
+			},
+			"opening_hours" : {
+				"title" : "每日營業時間",
+				"lines" : [
+					"11:00 — 23:00"
+				]
+			}
+		}
+	},
+
+	"bonapetit" : "请享用!",
+
+	"foodmenu" : {
+		"section_main_menu" : {
+			"title" : "Menu",
+			"anchor" : "jedalny-listok",
+			"pdf" : "Menu 2016 CH.pdf",
+			"pdf_title" : "Stiahnuť v PDF",
+			"parts" : {
+				"part_soup" : {
+					"title" : "Soups",
+					"icon" : "polievka",
+					"meals" : [
+						{ "no" : "101", "name" : "特製酸辣（サンラ−）スープ, 0.25 l", "price" : "2.30" },
+						{ "no" : "102", "name" : "鶏がらスープ, 0.25l", "price" : "2.50" },
+						{ "no" : "103", "name" : "ワンタンスープ, 0.25 l", "price" : "2.80" },
+						{ "no" : "104", "name" : "野菜スープ, 0.25 l", "price" : "2.00" },
+						{ "no" : "105", "name" : "海鲜スープ, 0.25 l", "price" : "3.30" },
+						{ "no" : "106", "name" : "トムヤムクン, 0.25 l", "price" : "3.80" },
+						{ "no" : "107", "name" : "毎日のスープ, 0.25 l", "price" : "3.00" }
+					]
+				},
+				"part_dimsum" : {
+					"title" : "Dim Sum",
+					"icon" : "dim_sum",
+					"meals" : [
+						{ "no" : "111", "name" : "海老蒸し餃子, 4 pcs", "price" : "4.50" },
+						{ "no" : "112", "name" : "海老シューマイ, 4 pcs", "price" : "4.50" },
+						{ "no" : "113", "name" : "蒸しエビ腸粉, 3 pcs", "price" : "4.50" },
+						{ "no" : "114", "name" : "ショーロンポー, 6 pcs", "price" : "3.50" },
+						{ "no" : "115", "name" : "水餃子, 6 pcs", "price" : "2.40" },
+						{ "no" : "116", "name" : "エビの包み揚げ", "price" : "4.80" },
+						{ "no" : "117", "name" : "エビの包み揚げ, 3 pcs", "price" : "4.50" }
+					]
+				},
+				"part_starters" : {
+					"title" : "Starters",
+					"icon" : "predjedla",
+					"meals" : [
+						{ "no" : "211", "name" : "えびせん, 80 g", "price" : "2.00" },
+						{ "no" : "212", "name" : "ピータン, 1 pc", "price" : "2.00" },
+						{ "no" : "213", "name" : "鶏肉のサテ, 150 g", "price" : "3.00" },
+						{ "no" : "214", "name" : "ベトナムのチャーゾー, 2 pcs", "price" : "2.80" },
+						{ "no" : "215", "name" : "羊肉の串焼き, 2 pcs", "price" : "3.60" },
+						{ "no" : "216", "name" : "ピータン豆腐, 350 g", "price" : "5.90" },
+						{ "no" : "217", "name" : "よだれ鶏, 300 g", "price" : "5.90" },
+						{ "no" : "218", "name" : "四川牛肉のサラダ, 300 g", "price" : "7.90" }
+					]
+				},
+				"part_salads" : {
+					"title" : "Šaláty",
+					"icon" : "salaty",
+					"meals" : [
+						{ "no" : "231", "name" : "ミックスサラダ, 180 g", "price" : "2.60" },
+						{ "no" : "232", "name" : "キャベツのおつまみサラダ, 180 g", "price" : "2.60" },
+						{ "no" : "233", "name" : "キュウリのサラダ, 180 g", "price" : "2.90" },
+						{ "no" : "234", "name" : "ルッコラのサラダ, 180 g", "price" : "3.50" },
+						{ "no" : "235", "name" : "コールラビのサラダ, 180 g", "price" : "3.50" },
+						{ "no" : "236", "name" : "キムチ, 180 g", "price" : "3.90" }
+					]
+				},
+				"part_poultry" : {
+					"title" : "Poultry",
+					"icon" : "hydina",
+					"meals" : [
+						{ "no" : "301", "name" : "酢鶏, 250 g", "price" : "5.90" },
+						{ "no" : "302", "name" : "鶏肉チャプスイ, 250 g", "price" : "6.90" },
+						{ "no" : "303", "name" : "鶏肉とナッツの炒め物, 250 g", "price" : "6.90" },
+						{ "no" : "304", "name" : "ヤンニョムチキン手羽先, 250 g", "price" : "7.90" },
+						{ "no" : "305", "name" : "ヤンニョムチキン, 250 g", "price" : "8.90" },
+						{ "no" : "306", "name" : "鶏肉の中国みそ炒め, 250 g", "price" : "8.90" },
+						{ "no" : "307", "name" : "鶏のもも肉の黒コショウ鉄板焼き, 300 g", "price" : "8.90" },
+						{ "no" : "308", "name" : "酢ダック, 300 g", "price" : "7.90" },
+						{ "no" : "309", "name" : "クリスピーダック, 200 g", "price" : "8.50" },
+						{ "no" : "310", "name" : "北京ダック(皮. 甜麺醤), 200 g", "price" : "9.90" },
+						{ "no" : "309a", "name" : "チュンビン, 6 pcs", "price" : "1.50" },
+						{ "no" : "309b", "name" : "甜麺醤, 20 g", "price" : "1.00" }
+					]
+				},
+				"part_pork" : {
+					"title" : "Pork",
+					"icon" : "bravcove",
+					"meals" : [
+						{ "no" : "401", "name" : "豚肉の四川風味, 250g", "price" : "6.90" },
+						{ "no" : "402", "name" : "キャベツと豚肉の辛口炒め（ホイコ−ロー）, 300 g", "price" : "8.90" },
+						{ "no" : "403", "name" : "スペアリブ, 250 g", "price" : "8.90" },
+						{ "no" : "404", "name" : "黒酢スブタ, 250 g", "price" : "8.90" },
+						{ "no" : "405", "name" : "豚バラの醤油煮, 250 g", "price" : "8.90" },
+						{ "no" : "406", "name" : "細切り豚肉と甘みそ炒め 中国餅付き, 250 g", "price" : "9.90" },
+						{ "no" : "407", "name" : "ニンニクの芽と豚肉の醤油炒め, 250 g", "price" : "11.90" }
+					]
+				},
+				"part_beef" : {
+					"title" : "Hovädzie mäso",
+					"icon" : "hovadzie",
+					"meals" : [
+						{ "no" : "501", "name" : "ビーフとオニオンのソテー, 250 g", "price" : "7.90" },
+						{ "no" : "502", "name" : "せん切り牛肉炒め, 250 g", "price" : "7.90" },
+						{ "no" : "503", "name" : "牛肉のオイスター炒め, 250 g", "price" : "7.90" },
+						{ "no" : "504", "name" : "牛肉の四川唐辛子炒め, 250 g", "price" : "9.90" },
+						{ "no" : "505", "name" : "牛肉の辛口鉄板焼き, 250 g", "price" : "9.90" },
+						{ "no" : "506", "name" : "ニンニクの芽と牛肉の醤油炒め, 250 g", "price" : "11.90" }
+					]
+				},
+				"part_fish" : {
+					"title" : "Fish & seafood",
+					"icon" : "ryby_a_plody_mora",
+					"meals" : [
+						{ "no" : "601", "name" : "蒸し鱈（たら）, 250 g", "price" : "11.90" },
+						{ "no" : "602", "name" : "きんぐちの姿蒸し, 300 g / 400 g", "price" : "12.90 / 15.90" },
+						{ "no" : "603", "name" : "ムール貝, 350 g", "price" : "11.90" },
+						{ "no" : "604", "name" : "レシピ ニライカ炒め, 250 g", "price" : "11.90" },
+						{ "no" : "605", "name" : "エビ コラードグリーン, 200 g", "price" : "14.90" },
+						{ "no" : "606", "name" : "塩ザンショウエビ, 200 g", "price" : "14.90" },
+						{ "no" : "607", "name" : "ホタテ貝柱, 200 g", "price" : "16.90" }
+					]
+				},
+				"part_vegetable" : {
+					"title" : "Vegetable dishes",
+					"icon" : "zeleninove_jedla",
+					"meals" : [
+						{ "no" : "701", "name" : "羅漢齋, 250 g", "price" : "4.90" },
+						{ "no" : "702", "name" : "スワンラー白菜, 250 g", "price" : "4.90" },
+						{ "no" : "703", "name" : "ピーマンとじやが芋炒め, 250 g", "price" : "4.90" },
+						{ "no" : "704", "name" : "空心菜とニンニクの炒め, 200 g", "price" : "5.90" },
+						{ "no" : "705", "name" : "玉子とニラの炒め, 250 g", "price" : "5.90" },
+						{ "no" : "706", "name" : "チンゲン菜と椎茸の炒め物, 250 g", "price" : "6.90" },
+						{ "no" : "707", "name" : "コラードグリーンの炒め物, 200 g", "price" : "6.90" }
+					]
+				},
+				"part_specialities" : {
+					"title" : "Specialities",
+					"icon" : "speciality",
+					"meals" : [
+						{ "no" : "801", "name" : "マーボードウフ, 300 g", "price" : "6.90" },
+						{ "no" : "802", "name" : "ナスの辛口中国みそ炒め, 300 g", "price" : "6.90" },
+						{ "no" : "803", "name" : "茄子、豚肉、ニンニクの醤油炒め, 250 g", "price" : "7.90" },
+						{ "no" : "804", "name" : "インゲン豆と干しえびのピリ辛炒め, 250 g", "price" : "7.90" },
+						{ "no" : "805", "name" : "羊肉と長ネギの炒め物, 250 g", "price" : "12.90" },
+						{ "no" : "806", "name" : "魚と酸菜煮, 400 g / 800 g", "price" : "9.90/14.90" }
+					]
+				},
+				"part_side" : {
+					"title" : "Side dishes",
+					"icon" : "prilohy",
+					"meals" : [
+						{ "no" : "921", "name" : "ライス, 120 g", "price" : "1.50" },
+						{ "no" : "922", "name" : "フライドポテト, 120 g", "price" : "1.20" },
+						{ "no" : "923", "name" : "ツォンユーピン, 250 g", "price" : "5.50" }
+					]
+				},
+				"part_rice" : {
+					"title" : "Fried rice and noodles",
+					"icon" : "prazena_ryza_a_rezance",
+					"meals" : [
+						{ "no" : "901", "name" : "卵チャーハン, 200 g", "price" : "2.50" },
+						{ "no" : "902", "name" : "五目チャーハン, 200 g", "price" : "2.90" },
+						{ "no" : "903", "name" : "エビチャーハン, 200 g", "price" : "4.90" },
+						{ "no" : "904", "name" : "ナシゴレン, 400 g", "price" : "5.90" },
+						{ "no" : "911", "name" : "焼きビーフン, 200 g", "price" : "3.90" },
+						{ "no" : "912", "name" : "ぶたにくやきそば, 200 g", "price" : "4.90" },
+						{ "no" : "913", "name" : "牛肉の炒めフォー, 200 g", "price" : "5.90" },
+						{ "no" : "914", "name" : "チャプチェ, 200 g", "price" : "5.90" },
+						{ "no" : "915", "name" : "ジャージャン麺, 200 g", "price" : "6.90" }
+					]
+				},
+				"part_fondue" : {
+					"title" : "Hot Pot",
+					"icon" : "cinske_fondue",
+					"meals" : [
+						{ "no" : "M1", "name" : "オシドリスープ", "price" : "9.90" },
+						{ "no" : "M2", "name" : "ソース（一人）", "price" : "1.90" },
+						{ "no" : "M3", "name" : "ラム, 200 g", "price" : "9.90" },
+						{ "no" : "M4", "name" : "쇠고기 牛肉, 200 g", "price" : "9.90" },
+						{ "no" : "M5", "name" : "エビ, 200 g", "price" : "9.90" },
+						{ "no" : "M6", "name" : "イカ, 200 g", "price" : "8.90" },
+						{ "no" : "M7", "name" : "お鱼だんご, 200 g", "price" : "6.90" },
+						{ "no" : "M8", "name" : "えび団子, 200 g", "price" : "6.90" },
+						{ "no" : "M9", "name" : "シーフードボール, 200 g", "price" : "6.90" },
+						{ "no" : "M10", "name" : "牛百叶, 200 g", "price" : "6.90" },
+						{ "no" : "M11", "name" : "豚の血豆腐, 200 g", "price" : "5.90" },
+						{ "no" : "M12", "name" : "豆腐, 200 g", "price" : "2.90" },
+						{ "no" : "M13", "name" : "油揚げ, 150 g", "price" : "3.90" },
+						{ "no" : "M14", "name" : "バーミセリ, 200 g", "price" : "3.90" },
+						{ "no" : "M15", "name" : "里芋, 200 g", "price" : "3.90" },
+						{ "no" : "M16", "name" : "キノコ, 150 g", "price" : "5.90" },
+						{ "no" : "M17", "name" : "ハクサイ, 200 g", "price" : "2.90" },
+						{ "no" : "M18", "name" : "ほうれん草, 180 g", "price" : "3.90" },
+						{ "no" : "M19", "name" : "若い青物, 180 g", "price" : "3.90" },
+						{ "no" : "M20", "name" : "シュンギク, 180 g", "price" : "4.50" },
+						{ "no" : "M21", "name" : "トッポッキ, 180 g", "price" : "4.50" },
+						{ "no" : "M22", "name" : "中国パセリ, 50 g", "price" : "2.50" }
+					]
+				},
+				"part_desert" : {
+					"title" : "Desserts",
+					"icon" : "dezerty",
+					"meals" : [
+						{ "no" : "951", "name" : "ごま団子, 4 pcs", "price" : "2.50" },
+						{ "no" : "952", "name" : "フルーツ揚げ, 120 g", "price" : "2.90" },
+						{ "no" : "953", "name" : "アイスクリームm, 150 g", "price" : "2.90" },
+						{ "no" : "954", "name" : "バナナスプリット, 150 g", "price" : "2.90" },
+						{ "no" : "955", "name" : "フライドアイスクリーム, 150 g", "price" : "3.50" },
+						{ "no" : "956", "name" : "もち米糍, 150 g", "price" : "4.50" },
+						{ "no" : "957", "name" : "チョコレートタルトとアイスクリーム, 150 g", "price" : "4.50" }
+					]
+				},
+				"part_oneperson" : {
+					"title" : "Menu set for 1 person",
+					"icon" : "menu_pre_1_osobu",
+					"meals" : [
+						{ "no" : "B1", "name" : "酸辣湯或雙冬雞片湯, 0.25 l", "price" : "10.90" },
+						{ "no" : "", "name" : "香酥鴨, 100 g", "price" : "" },
+						{ "no" : "", "name" : "甜酸雞肉, 100 g", "price" : "" },
+						{ "no" : "", "name" : "米飯, 100 g", "price" : "" },
+						{ "no" : "", "name" : "新鲜水果", "price" : "" }
+					]
+				},
+				"part_twoperson" : {
+					"title" : "Menu set for 2 persons",
+					"icon" : "menu_pre_2_osoby",
+					"meals" : [
+						{ "no" : "B2", "name" : "酸辣湯或雙冬雞片, 0.25 l", "price" : "22.90" },
+						{ "no" : "", "name" : "什錦沙拉, 120 g", "price" : "" },
+						{ "no" : "", "name" : "雙冬雞片, 100 g", "price" : "" },
+						{ "no" : "", "name" : "香酥鴨, 100 g", "price" : "" },
+						{ "no" : "", "name" : "四川牛肉, 100 g", "price" : "" },
+						{ "no" : "", "name" : "時蔬炒米粉, 100 g", "price" : "" },
+						{ "no" : "", "name" : "米飯, 100 g", "price" : "" },
+						{ "no" : "", "name" : "新鲜水果", "price" : "" }
+					]
+				},
+				"part_fourperson" : {
+					"title" : "Menu set for 4 persons",
+					"icon" : "menu_pre_4_osoby",
+					"meals" : [
+						{ "no" : "B3", "name" : "酸辣湯或雙冬鸡片汤, 0.25 l", "price" : "39.90" },
+						{ "no" : "", "name" : "什錦沙拉, 120 g", "price" : "" },
+						{ "no" : "", "name" : "雙冬豬肉, 100 g", "price" : "" },
+						{ "no" : "", "name" : "宮保雞丁, 100 g", "price" : "" },
+						{ "no" : "", "name" : "香酥鴨, 100 g", "price" : "" },
+						{ "no" : "", "name" : "洋蔥牛肉, 100 g", "price" : "" },
+						{ "no" : "", "name" : "甜酸雞肉, 100 g", "price" : "" },
+						{ "no" : "", "name" : "四川鴨, 100 g", "price" : "" },
+						{ "no" : "", "name" : "米飯, 200 g", "price" : "" },
+						{ "no" : "", "name" : "新鲜水果", "price" : "" }
+					]
+				}
+			}
+		},
+		"section_wines" : {
+			"title" : "Wines",
+			"anchor" : "wines",
+			"pdf" : "Vinny 2016 CH.pdf",
+			"pdf_title" : "Download as PDF",
+			"parts" : {
+				"part_liquers" : {
+					"title" : "Liquors and spirits",
+					"icon" : "likery_palenky_a_aperitivy",
+					"meals" : [
+						{ "no" : "", "name" : "<strong>BITTERS AND APERITIFS</strong>", "price" : "" },
+						{ "no" : "", "name" : "Becherovka, 4 cl", "price" : "2.60" },
+						{ "no" : "", "name" : "Campari, 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "Fernet, 4 cl", "price" : "2.60" },
+						{ "no" : "", "name" : "Fernet citrus, 4 cl", "price" : "2.60" },
+						{ "no" : "", "name" : "Jagermeister, 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "Slivovica (Bosacka), 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "Hruška (Spiš), 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>VODKA</strong>", "price" : "" },
+						{ "no" : "", "name" : "Vodka Fínska, 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "Vodka Absolut, 4 cl", "price" : "2.90" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>WHISKY</strong>", "price" : "" },
+						{ "no" : "", "name" : "Chivas Regas 12.y.o., 4 cl", "price" : "4.80" },
+						{ "no" : "", "name" : "Jack daniels, 4 cl", "price" : "3.60" },
+						{ "no" : "", "name" : "Jim Beam, 4 cl", "price" : "3.30" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>COGNAC AND BRANDY</strong>", "price" : "" },
+						{ "no" : "", "name" : "Hennessy v.s., 4 cl", "price" : "5.00" },
+						{ "no" : "", "name" : "Remy Martin V.S.O.P., 4 cl", "price" : "7.50" },
+						{ "no" : "", "name" : "Karpatske brandy špeciál, 4 cl", "price" : "3.50" },
+						{ "no" : "", "name" : "Rum pyrat, 4 cl", "price" : "3.50" }
+
+					]
+				},
+				"part_special_wines" : {
+					"title" : "Special wines",
+					"icon" : "specialne_vina",
+					"meals" : [
+						{ "no" : "", "name" : "Slivkové víno (hot), 8 cl", "price" : "3.00" },
+						{ "no" : "", "name" : "Saké (hot), 8 cl", "price" : "3.00" },
+						{ "no" : "", "name" : "Sóju chamisul Classic (bottled), 350ml", "price" : "9.90" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>VERMOUTH</strong>", "price" : "" },
+						{ "no" : "", "name" : "Martini extra, 8 cl", "price" : "3.00" },
+						{ "no" : "", "name" : "Martini Bianco, 8 cl", "price" : "3.00" },
+						{ "no" : "", "name" : "Martini rosso, 8 cl", "price" : "3.00" }
+					]
+				},
+				"part_glass_wines" : {
+					"title" : "Wine by the glass",
+					"icon" : "rozlievane_vina",
+					"meals" : [
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>WHITE</strong>", "price" : "" },
+						{ "no" : "", "name" : "Devín – polosuché (Pivnica Čajkov), 0.1 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Veltlínske zelené suché (Pivnica Čajkov), 0.1 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Rulandské šede suché (Mrva Stanko), 0.1 l", "price" : "2.20" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>ROSE</strong>", "price" : "" },
+						{ "no" : "", "name" : "Cabernet Sauvignon (Pivnica Čajkov) 0.1 l", "price" : "1.80" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>RED</strong>", "price" : "" },
+						{ "no" : "", "name" : "Svätovavrinecké (Pivnica Čajkov), 0.1 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Frankovka Modra (Pivnica Čajkov), 0.1 l", "price" : "2.00" }
+					]
+				},
+				"part_bottle_wines" : {
+					"title" : "Bottled wine",
+					"icon" : "vina_vo_flasi",
+					"meals" : [
+						{ "no" : "", "name" : "<strong>WHITE</strong>", "price" : "" },
+						{ "no" : "", "name" : "Sauvignon polosuché (Vysoké pole), 0.75 l", "price" : "15.00" },
+						{ "no" : "", "name" : "Veltlinske zelene suché (Vysoké pole), 0.75 l", "price" : "15.00" },
+						{ "no" : "", "name" : "Rulandske šedé (Mrva Stanko), 0.75 l", "price" : "25.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>ROSE</strong>", "price" : "" },
+						{ "no" : "", "name" : "Cabernet Sauvignon, 0.75 l", "price" : "15.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>RED</strong>", "price" : "" },
+						{ "no" : "", "name" : "Slovenské/Slovakia", "price" : "" },
+						{ "no" : "", "name" : "Frankovka Modra suché (Pivnica Čajkov), 0.75 l", "price" : "20.00" },
+						{ "no" : "", "name" : "Cabernet Sauvignon ročník 2012", "price" : "" },
+						{ "no" : "", "name" : "(Výber z hrozna, suché, Mrva Stanko), 0.75 l", "price" : "25.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>FRENCH</strong>", "price" : "" },
+						{ "no" : "", "name" : "Chateau de Cérons, r. 2010, červené, 0.75l", "price" : "40.00" },
+						{ "no" : "", "name" : "Chateau Clou du PIN, r. 2010, 0.75 l", "price" : "20.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>CHAMPAGNE</strong>", "price" : "" },
+						{ "no" : "", "name" : "Hubert brit, 0.75 l", "price" : "10.00" },
+						{ "no" : "", "name" : "Hubert polosladké ružové, 0.75 l", "price" : "10.00" },
+						{ "no" : "", "name" : "Hubert de–luxe, 0.75l", "price" : "15.00" }
+					]
+				}
+			}
+		},
+		"section_drink" : {
+			"title" : "Beverages",
+			"anchor" : "beverages",
+			"pdf" : "Napojovy 2016 CH.pdf",
+			"pdf_title" : "Download as PDF",
+			"parts" : {
+				"part_beer" : {
+					"title" : "Beer",
+					"icon" : "pivo",
+					"meals" : [
+						{ "no" : "", "name" : "<strong>ČAPOVANÉ</strong>", "price" : "" },
+						{ "no" : "", "name" : "Zlatý Bažant 10°, 0.3l", "price" : "1.50" },
+						{ "no" : "", "name" : "Zlatý Bažant 10°, 0.3l", "price" : "2.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>BOTTLED</strong>", "price" : "" },
+						{ "no" : "", "name" : "Pilsner Urquell 12°, 0.3 l", "price" : "2.00" },
+						{ "no" : "", "name" : "Pilsner Urquell 12°, 0.5 l", "price" : "2.50" },
+						{ "no" : "", "name" : "Zlatý Bažant Radler citrón nealko, 0.5 l", "price" : "2.50" },
+						{ "no" : "", "name" : "Zlatý Bažant Nealko, 0.3 l", "price" : "2.20" },
+						{ "no" : "", "name" : "Čínske pivo TSINGTAO, 0.3 l", "price" : "3.00" }
+					]
+				},
+				"part_soft" : {
+					"title" : "Soft drinks and juices",
+					"icon" : "nealkoholicke_napoje",
+					"meals" : [
+						{ "no" : "", "name" : "Coca–Cola, 0.33 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Coca–Cola Zero, 0.33 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Fanta, 0.33 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Sprite, 0.33 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Tonic kinley, 0.25 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Tonic zázvorový, 0.25 l", "price" : "1.80" },
+						{ "no" : "", "name" : "Kofola, 0.33 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Vinea, 0.25 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Romerquelle sýtená, 0.33 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Romerquelle nesýtená, 0.33 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Romerquelle nesýtená, 0.75 l", "price" : "3.00" },
+						{ "no" : "", "name" : "Romerquelle sýtená, 0.75 l", "price" : "3.00" },
+						{ "no" : "", "name" : "Soda, 0.1 l", "price" : "0.30" },
+						{ "no" : "", "name" : "Nestea broskyňa, 0.2 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Nestea citrus, 0.2 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Cappy jablko, 0.2 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Cappy pomaranč, 0.2 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Líci džús, 0.25 l", "price" : "2.00" },
+						{ "no" : "", "name" : "Aloe vera, 0.50 l", "price" : "3.00" },
+						{ "no" : "", "name" : "Fresh juices, 0.1 l", "price" : "1.60" },
+						{ "no" : "", "name" : "Duojiabao cool tea, 0.25 l", "price" : "2.00" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "Homemade lemonade, 0.50 l", "price" : "" },
+						{ "no" : "", "name" : "Homemade lemonade, 1.00 l", "price" : "" }
+					]
+				},
+				"part_hot" : {
+					"title" : "Coffee and tea",
+					"icon" : "teple_napoje",
+					"meals" : [
+						{ "no" : "", "name" : "Espresso, 7 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Coffee – decaf, 7 g", "price" : "1.90" },
+						{ "no" : "", "name" : "Espresso double, 7 g", "price" : "2.20" },
+						{ "no" : "", "name" : "Capuccino, 7 g", "price" : "2.40" },
+						{ "no" : "", "name" : "Vienna coffee, 7 g", "price" : "2.40" },
+						{ "no" : "", "name" : "Ľadová káva – iced coffee, 7 g", "price" : "2.90" },
+						{ "no" : "", "name" : "Jasmin tea, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Green tea, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Kamilkovy čaj, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Fruit tea, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Mint tea, 5g", "price" : "1.60" },
+						{ "no" : "", "name" : "Black tea, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "Ginger tea, 5 g", "price" : "1.60" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "<strong>FRESH TEA</strong>", "price" : "" },
+						{ "no" : "", "name" : "Čaj z čerstvej mäty s medom a citrónom, 0.5 l", "price" : "2.90" },
+						{ "no" : "", "name" : "Mätovo – zázvorový horúci čaj, 0.5 l", "price" : "2.90" },
+						{ "no" : "", "name" : "", "price" : "" },
+						{ "no" : "", "name" : "Honey", "price" : "0.30" },
+						{ "no" : "", "name" : "Lemon - whole", "price" : "0.50" },
+						{ "no" : "", "name" : "Milk in coffee", "price" : "0.30" }
+					]
+				}
+			}
+		}
+	}
+}
