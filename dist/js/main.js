@@ -448,6 +448,10 @@ jQuery(document).ready(function($) {
 });
 jQuery(document).ready(function($) {
 	$('.js-scrollbarize').perfectScrollbar();
+
+	// $(".js-scrollbarize").mCustomScrollbar({
+	// 	theme:"minimal-dark"
+	// });
 });
 jQuery(document).ready(function($) {
 
@@ -525,6 +529,7 @@ jQuery(document).ready(function($) {
 	  });
 	});
 });
+svg4everybody();
 jQuery(document).ready(function($) {
 
 	/*

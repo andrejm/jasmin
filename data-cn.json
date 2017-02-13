@@ -8,7 +8,7 @@
 			"id" : "about"
 		},
 		"menu" : {
-			"title" : "关于团餐",
+			"title" : "菜单",
 			"id" : "menu"
 		},
 		"contact" : {
@@ -39,14 +39,21 @@
 	"aboutpage" : {
 		"title" : "主页",
 		"desc" : [
-			"城寶山莊 城寶山莊始建於1996年,是斯洛伐克歷史最悠久和最著名的中國飯店之一. 它位於首都布拉迪斯拉发市中心;面對聖馬丁大教堂,背倚著名的古城堡,藍色的多瑙河在不遠處靜靜地流過,地理位置非常優越.",
-			"我們飯店有近80 個座位,夏天有美麗的花園,並為客人備有停車位.飯店的廚師全部來自于中國的星級酒店,有著豐富的工作經驗.我們廚師提供的菜品都是正宗的中國菜和不同風味的亞洲菜.同時我們也提供不同檔次的團隊餐,與數個國際性的旅行社都有著穩定的業務關係.",
+			"城堡饭店始建於1996年,是斯洛伐克歷史最悠久和最著名的中國飯店之一. 它位於首都布拉迪斯拉发市中心;面對聖馬丁大教堂,背倚著名的古城堡,藍色的多瑙河在不遠處靜靜地流過,地理位置非常優越.",
+			"我們飯店有近80 個座位,夏天有美麗的花園,飯店的廚師全部來自于中國的星級酒店,有著豐富的工作經驗.我們廚師提供的菜品都是正宗的中國菜和不同風味的亞洲菜.同時我們也提供不同檔次的團隊餐,與數個國際性的旅行社都有著穩定的業務關係.",
 			"我們把為客人提供最優質的菜品和服務作為立店的宗旨, 歡迎各位光臨本店."
 		],
 		"slides" : [
-			"images/slide_01.jpg",
-			"images/slide_02.jpg",
-			"images/slide_03.jpg"
+			"images/about/B01.jpg",
+			"images/about/B02.jpg",
+			"images/about/B03.jpg",
+			"images/about/B04.jpg",
+			"images/about/B05.jpg",
+			"images/about/B06.jpg",
+			"images/about/B07.jpg",
+			"images/about/B08.jpg",
+			"images/about/B09.jpg",
+			"images/about/B10.jpg"
 		]
 	},
 
@@ -56,7 +63,7 @@
 			"address" : {
 				"title" : "飯店地址",
 				"lines" : [
-					"城寶山莊",
+					"城堡饭店",
 					"飯店地址:",
 					"Židovská 7",
 					"811 01 Bratislava, Slovakia",
@@ -68,7 +75,10 @@
 				"lines" : [
 					"聯繫電話: 00421 2 54415182",
 					"傳真: 00421 2 54415182",
-					"電子信箱: jasmin.1@hotmail.com"
+					"電子信箱: jasmin.1@hotmail.com",
+					"<a href=\"https://www.facebook.com/Jasmin-cinska-restauracia-219416045090366/\" target=\"_blank\">Facebook</a>",
+					"Wechat ID: jasminSK",
+					"<a href=\"https://www.tripadvisor.sk/Restaurant_Review-g274924-d740036-Reviews-Jasmin_Chinese_Restaurant-Bratislava_Bratislava_Region.html\" target=\"_blank\">Tripadvisor</a>"
 				]
 			},
 			"opening_hours" : {
@@ -80,7 +90,7 @@
 		}
 	},
 
-	"bonapetit" : "请享用!",
+	"bonapetit" : "欢迎光临",
 
 	"foodmenu" : {
 		"section_main_menu" : {

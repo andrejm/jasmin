@@ -10,6 +10,7 @@ $arrow-movement: rem-calc(7);
 	vertical-align: middle;
 	padding: rem-calc(5 10);
 	box-sizing: content-box;
+	overflow: hidden;
 
 	&:before,
 	&:after {
@@ -25,6 +26,7 @@ $arrow-movement: rem-calc(7);
 	}
 
 	&--right {
+		visibility: hidden; //TODO temporarily hide chinese lang version
 		&:before {
 			content: '';
 		}

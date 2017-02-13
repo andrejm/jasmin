@@ -40,13 +40,20 @@
 		"title" : "About&nbsp;us",
 		"desc" : [
 			"Our restaurant Jasmin originated in 1996. It is located under the castle in the historical centre of Bratislava, opposite the St. Martin´s cathedral. We are a well-known dining house in Bratislava.",
-			"All year round we offer up to 80 indoor seatings and in the summer time we provide you with 18 seats on our terrace. Our guests are free to use our 6 parking places right in front of the restaurant.",
+			"All year round we offer up to 80 indoor seatings and in the summer time we provide you with 18 seats on our terrace.",
 			"We have excellent Chinese cooks hinese cooks with the experience from the finest Chinese 5-star hotels. Our staff speaks Slovak, English and Chinese. Just try the taste of the typical specialties of the Asian kitchen."
 		],
 		"slides" : [
-			"images/slide_01.jpg",
-			"images/slide_02.jpg",
-			"images/slide_03.jpg"
+			"images/about/B01.jpg",
+			"images/about/B02.jpg",
+			"images/about/B03.jpg",
+			"images/about/B04.jpg",
+			"images/about/B05.jpg",
+			"images/about/B06.jpg",
+			"images/about/B07.jpg",
+			"images/about/B08.jpg",
+			"images/about/B09.jpg",
+			"images/about/B10.jpg"
 		]
 	},
 
@@ -56,7 +63,7 @@
 			"address" : {
 				"title" : "Address",
 				"lines" : [
-					"Chinese Restaurant Jasmin&nbsp;1, Židovská&nbsp;7",
+					"Chinese Restaurant Jasmin, Židovská&nbsp;7",
 					"811&nbsp;01 Bratislava, Slovak Republic"
 				]
 			},
@@ -65,7 +72,10 @@
 				"lines" : [
 					"Tel.: + 421 2 54 41 51 82",
 					"Fax:  + 421 2 54 41 51 82",
-					"E-mail: jasmin.1@hotmail.com"
+					"E-mail: jasmin.1@hotmail.com",
+					"<a href=\"https://www.facebook.com/Jasmin-cinska-restauracia-219416045090366/\" target=\"_blank\">Facebook</a>",
+					"Wechat ID: jasminSK",
+					"<a href=\"https://www.tripadvisor.sk/Restaurant_Review-g274924-d740036-Reviews-Jasmin_Chinese_Restaurant-Bratislava_Bratislava_Region.html\" target=\"_blank\">Tripadvisor</a>"
 				]
 			},
 			"opening_hours" : {

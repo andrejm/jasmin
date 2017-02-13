@@ -5671,6 +5671,7 @@ b {
   vertical-align: middle;
   padding: 0.3125rem 0.625rem;
   box-sizing: content-box;
+  overflow: hidden;
 }
 
 .langhref:before, .langhref:after {
@@ -5683,6 +5684,10 @@ b {
 .langhref:before {
   content: url("../../images/arrow-left.svg");
   margin-right: 0.625rem;
+}
+
+.langhref--right {
+  visibility: hidden;
 }
 
 .langhref--right:before {
@@ -6042,6 +6047,8 @@ b {
 .moreinfo {
   background-color: #ecdccc;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .moreinfo__inner {
@@ -6052,6 +6059,9 @@ b {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
 }
 
 @media screen and (min-width: 64em) {
@@ -6061,7 +6071,6 @@ b {
         flex-flow: row nowrap;
     -ms-flex-line-pack: stretch;
         align-content: stretch;
-    max-height: 100%;
   }
 }
 
@@ -6083,15 +6092,18 @@ b {
 .moreinfo__text {
   padding-bottom: 2.1875rem;
   position: relative;
+  overflow: hidden;
+  height: auto;
+  max-height: 100%;
 }
 
 @media screen and (min-width: 64em) {
   .moreinfo__text {
     width: 33.3%;
+    max-width: 33.3%;
     -ms-flex: 0 0 33.3%;
         flex: 0 0 33.3%;
     padding: 1.25rem 1.875rem 3.125rem 3.125rem;
-    overflow-y: auto;
   }
 }
 
