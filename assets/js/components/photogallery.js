@@ -6,6 +6,8 @@ jQuery(document).ready(function($) {
 		dots: true,
 		arrows: false,
 		variableWidth: false,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		mobileFirst : true,
 		responsive : [
 			{

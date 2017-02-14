@@ -4,4 +4,9 @@
 	// @include breakpoint( medium ) {
 	// 	display: inline;
 	// }
+
+	img {
+		max-width: rem-calc( 23 );
+		height: auto;
+	}
 }

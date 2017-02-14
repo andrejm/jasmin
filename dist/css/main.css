@@ -5445,6 +5445,11 @@ b {
   color: inherit;
 }
 
+.fb-link img {
+  max-width: 1.4375rem;
+  height: auto;
+}
+
 .foodmenu {
   max-width: 75rem;
   margin-left: auto;
