@@ -398,6 +398,17 @@ jQuery(document).ready(function($) {
 	}
 });
 jQuery(document).ready(function($) {
+	$('#fullpage').fullpage({
+		anchors: ['', 'section-about', 'section-menu', 'section-contact', 'section-bonapetit'],
+		menu: '.js-main-menu',
+		sectionSelector: '.js-section',
+		scrollBar: true,
+		paddingTop: '60px',
+		bigSectionsDestination: 'top',
+		fitToSection: false
+	});
+});
+jQuery(document).ready(function($) {
 	// console.log('main banner out of if');
 	if( $('.js-main-banner').length ) {
 		// console.log('main banner');
@@ -463,38 +474,38 @@ jQuery(document).ready(function($) {
 		$navigation = $( '.js-main-menu' ),
 		topbarHeight = 80;
 
-	$('.js-section').each(function eachElement() {
-		// cache the jQuery object
-		var $this = $(this);
+	// $('.js-section').each(function eachElement() {
+	// 	// cache the jQuery object
+	// 	var $this = $(this);
 
-		var position = $this.position();
+	// 	var position = $this.position();
 
-		var $currentMenuItem = '';
+	// 	var $currentMenuItem = '';
 
-		// window.console.log(position);
-		// window.console.log('min: ' + position.top + ' / max: ' + window.parseInt(position.top + $this.height(), 10));
+	// 	// window.console.log(position);
+	// 	// window.console.log('min: ' + position.top + ' / max: ' + window.parseInt(position.top + $this.height(), 10));
 
-		$this.scrollspy({
-			min: position.top - topbarHeight,
-			max: position.top + $this.height() - 1 - topbarHeight,
-			onEnter: function onEnter(element/*, position*/) {
-				$currentMenuItem = $navigation.find('[data-section="' + element.id + '"]');
+	// 	$this.scrollspy({
+	// 		min: position.top - topbarHeight,
+	// 		max: position.top + $this.height() - 1 - topbarHeight,
+	// 		onEnter: function onEnter(element/*, position*/) {
+	// 			$currentMenuItem = $navigation.find('[data-section="' + element.id + '"]');
 
 
-				// console.log('[data-section="' + element.id + '"]');
-				// console.log('Entering ' + element.id);
-				// console.log($currentMenuItem);
+	// 			// console.log('[data-section="' + element.id + '"]');
+	// 			// console.log('Entering ' + element.id);
+	// 			// console.log($currentMenuItem);
 
-				$currentMenuItem.addClass('main-menu__item--active');
+	// 			$currentMenuItem.addClass('main-menu__item--active');
 
-			},
-			onLeave: function onLeave(element/*, position*/) {
-				// window.console.log('Leaving ' + element.id);
-				$currentMenuItem = $navigation.find('[data-section="' + element.id + '"]');
-				$currentMenuItem.removeClass('main-menu__item--active');
-			}
-		});
-	});
+	// 		},
+	// 		onLeave: function onLeave(element/*, position*/) {
+	// 			// window.console.log('Leaving ' + element.id);
+	// 			$currentMenuItem = $navigation.find('[data-section="' + element.id + '"]');
+	// 			$currentMenuItem.removeClass('main-menu__item--active');
+	// 		}
+	// 	});
+	// });
 
 
 	$menuTrigger = $('.js-section-trigger-menu');
@@ -518,20 +529,20 @@ jQuery(document).ready(function($) {
 
 	var topbarHeight = 80;
 
-	$(function() {
-	  $('a[href*="#"]:not([href="#"]):not(.r-tabs-anchor)').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html, body').animate({
-	          scrollTop: target.offset().top - topbarHeight
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
+	// $(function() {
+	//   $('a[href*="#"]:not([href="#"]):not(.r-tabs-anchor)').click(function() {
+	//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	//       var target = $(this.hash);
+	//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	//       if (target.length) {
+	//         $('html, body').animate({
+	//           scrollTop: target.offset().top - topbarHeight
+	//         }, 1000);
+	//         return false;
+	//       }
+	//     }
+	//   });
+	// });
 });
 svg4everybody();
 jQuery(document).ready(function($) {

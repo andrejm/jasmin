@@ -27,7 +27,7 @@
 			@include underline();
 		}
 		&:hover::after,
-		&--active::after {
+		&.active::after {
 			@include underline-hover( $primary-color )
 		}
 

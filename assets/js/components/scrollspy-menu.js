@@ -4,38 +4,38 @@ jQuery(document).ready(function($) {
 		$navigation = $( '.js-main-menu' ),
 		topbarHeight = 80;
 
-	$('.js-section').each(function eachElement() {
-		// cache the jQuery object
-		var $this = $(this);
+	// $('.js-section').each(function eachElement() {
+	// 	// cache the jQuery object
+	// 	var $this = $(this);
 
-		var position = $this.position();
+	// 	var position = $this.position();
 
-		var $currentMenuItem = '';
+	// 	var $currentMenuItem = '';
 
-		// window.console.log(position);
-		// window.console.log('min: ' + position.top + ' / max: ' + window.parseInt(position.top + $this.height(), 10));
+	// 	// window.console.log(position);
+	// 	// window.console.log('min: ' + position.top + ' / max: ' + window.parseInt(position.top + $this.height(), 10));
 
-		$this.scrollspy({
-			min: position.top - topbarHeight,
-			max: position.top + $this.height() - 1 - topbarHeight,
-			onEnter: function onEnter(element/*, position*/) {
-				$currentMenuItem = $navigation.find('[data-section="' + element.id + '"]');
+	// 	$this.scrollspy({
+	// 		min: position.top - topbarHeight,
+	// 		max: position.top + $this.height() - 1 - topbarHeight,
+	// 		onEnter: function onEnter(element/*, position*/) {
+	// 			$currentMenuItem = $navigation.find('[data-section="' + element.id + '"]');
 
 
-				// console.log('[data-section="' + element.id + '"]');
-				// console.log('Entering ' + element.id);
-				// console.log($currentMenuItem);
+	// 			// console.log('[data-section="' + element.id + '"]');
+	// 			// console.log('Entering ' + element.id);
+	// 			// console.log($currentMenuItem);
 
-				$currentMenuItem.addClass('main-menu__item--active');
+	// 			$currentMenuItem.addClass('main-menu__item--active');
 
-			},
-			onLeave: function onLeave(element/*, position*/) {
-				// window.console.log('Leaving ' + element.id);
-				$currentMenuItem = $navigation.find('[data-section="' + element.id + '"]');
-				$currentMenuItem.removeClass('main-menu__item--active');
-			}
-		});
-	});
+	// 		},
+	// 		onLeave: function onLeave(element/*, position*/) {
+	// 			// window.console.log('Leaving ' + element.id);
+	// 			$currentMenuItem = $navigation.find('[data-section="' + element.id + '"]');
+	// 			$currentMenuItem.removeClass('main-menu__item--active');
+	// 		}
+	// 	});
+	// });
 
 
 	$menuTrigger = $('.js-section-trigger-menu');

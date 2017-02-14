@@ -26,7 +26,7 @@
                 </svg>
             </a> 
             <ul class="header__menu main-menu js-main-menu">
-                    <li class="main-menu__item main-menu__item--home" data-section="top">
+                    <li class="main-menu__item main-menu__item--home" data-section="top" data-menuanchor="section-home">
                         <a href="#top">
                             <svg class="main-menu__logo">
                                 <use xlink:href="dist/svg/svg.svg#krizik_sam" />
@@ -34,7 +34,7 @@
                         </a>
                     </li>
                 {% for item in menu %}
-                    <li class="main-menu__item" data-section="{{ item.id }}"><a href="#{{ item.id }}">{{ item.title }}</a></li>
+                    <li class="main-menu__item" data-menuanchor="section-{{ item.id }}" ><a href="#section-{{ item.id }}">{{ item.title }}</a></li>
                 {% endfor %}
             </ul>
         </header>
@@ -45,6 +45,7 @@
         <script src="dist/js/svg4everybody.min.js"></script>
         <!-- <script src='dist/js/perfect-scrollbar.jquery.min.js'></script> -->
         {# <script src="dist/js/jquery.mCustomScrollbar.concat.min.js?ver=20170213"></script> #}
+        <script src="dist/js/jquery.fullPage.min.js"></script>
         <script src="dist/js/main.js?ver=20170212"></script>
         
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYk8vSk7uJMlU4zoGngnlxEzwZUKKFQDg&callback=initMap" async defer></script>
